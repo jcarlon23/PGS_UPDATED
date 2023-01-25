@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  margin: 0;
+}
+
+ video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+}
+
+ .main {
+  width: 100%;
+  height: 100%;
+}

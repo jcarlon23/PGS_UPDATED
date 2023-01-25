@@ -1,14 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
 import { Box } from '@mui/material';
-import Main from './components/Main.jsx';
-
+import { Navbar, Cards, Footer, Intro, Video } from "./components";
+import "./App.css";
 
 
 
 function App() {
 return (
   <div className="App">
-    <Main/>
+    <div>
+  <Navbar />
+  <Video />
+  </div>
+  <Intro />
+  <Cards />
+  <Footer />
   </div>
    );
 }
