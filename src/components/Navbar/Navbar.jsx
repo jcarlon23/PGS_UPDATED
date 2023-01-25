@@ -1,34 +1,44 @@
-import React from 'react';
 import "./Navbar.css";
+import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from "./logo.png";
+import React, { useState } from 'react';
 
 
 
 
 const Navbar = () => {
-  return (
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-            <img src={logo} />
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-  
 
-    </nav>
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
+
+    return (
+    <div className='header'>
+    <nav className='navbar'>
+        <a href='/' className='logo'>
+            <img src={logo} alt='logo' />
+        </a>
+        <div className='hamburger' onClick={handleClick}>
+            {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className='nav-item'>
+                <a href='/' onClick={closeMenu}>Home</a>
+            </li>
+            <li className='nav-item'>
+                <a href='#about' onClick={closeMenu}>About</a>
+            </li>
+            <li className='nav-item'>
+                <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
+            </li>
+            <li className='nav-item'>
+                <a href='#demo' onClick={closeMenu}>Demo</a>
+            </li>
+        </ul>
+      </nav>
+      </div>
   )
 }
 
