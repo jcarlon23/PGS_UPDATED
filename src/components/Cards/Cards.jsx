@@ -1,8 +1,7 @@
 import React from 'react'
-import card from "./PGS.png";
-import card2 from "./PGS2.png";
-import card3 from "./PGS3.png";
-import card4 from "./PGS4.png";
+import card2 from "./PGS2.png"
+import card3 from "./PGS3.png"
+import card4 from "./PGS4.png"
 import "./Cards.css";
 
 const Cards = () => {
@@ -48,7 +47,7 @@ wrapper.forEach(element => {
   <div class="cardWrap">
     <div class="card">
       <div class="cardBg">
-    <img src={card2} height={500} />
+    <img src={card2} height={500} alt="card2" />
      </div>
      <div class="cardInfo">
         <h3 class="cardTitle">
@@ -58,12 +57,14 @@ wrapper.forEach(element => {
      </div>
      </div>
      </div>
+     
+
 
 
    <div class="cardWrap">
     <div class="card">
       <div class="cardBg">
-    <img src={card3} height={500} />
+    <img src={card3} height={500} alt="card3" />
      </div>
     <div class="cardInfo">
         <h3 class="cardTitle">
@@ -73,11 +74,12 @@ wrapper.forEach(element => {
      </div>
      </div>
      </div>
+
 
      <div class="cardWrap">
     <div class="card">
       <div class="cardBg">
-    <img src={card4} height={500} />
+    <img src={card4} height={500} alt="card4" />
      </div>
     <div class="cardInfo">
         <h3 class="cardTitle">
@@ -88,31 +90,6 @@ wrapper.forEach(element => {
      </div>
      </div>
      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   )
 }

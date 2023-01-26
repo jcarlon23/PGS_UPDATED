@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  height: 120px;
+  height: 150px;
   width: 100%;
   top: 0;
   left: 0;
@@ -22,9 +22,13 @@
 
 
 .header .nav-menu a {
-  color: #ffffff;
-  margin: 0;
-  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
 }
 
 .header .navbar img {
@@ -93,17 +97,18 @@
   }
 }
 
-a {
+.nav-item {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
+  font-size: 20px;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 10px 10px;
   position: relative;
 }
-a:after {
+
+.nav-item:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -115,7 +120,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+.nav-item:hover:after {
   width: 100%;
   left: 0;
 }
