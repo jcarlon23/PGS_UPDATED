@@ -2,6 +2,7 @@ import React from 'react'
 import card2 from "./PGS2.png"
 import card3 from "./PGS3.png"
 import card4 from "./PGS4.png"
+import card5 from "./PGS5.png"
 import "./Cards.css";
 
 const Cards = () => {
@@ -57,11 +58,8 @@ wrapper.forEach(element => {
      </div>
      </div>
      </div>
-     
 
-
-
-   <div class="cardWrap">
+    <div class="cardWrap">
     <div class="card">
       <div class="cardBg">
     <img src={card3} height={500} alt="card3" />
@@ -75,8 +73,7 @@ wrapper.forEach(element => {
      </div>
      </div>
 
-
-     <div class="cardWrap">
+    <div class="cardWrap">
     <div class="card">
       <div class="cardBg">
     <img src={card4} height={500} alt="card4" />
@@ -89,7 +86,23 @@ wrapper.forEach(element => {
      </div>
      </div>
      </div>
+
+     <div class="cardWrap">
+    <div class="card">
+      <div class="cardBg">
+    <img src={card5} height={500} alt="card5" />
+    </div>
+    <div class="cardInfo">
+        <h3 class="cardTitle">
+          Sign up Now !!!
+        </h3>
+        <p>Come and enjoy the fun with us at Gambarie</p>
      </div>
+     </div>
+     </div>
+     </div>
+
+
 
   )
 }
