@@ -18,24 +18,46 @@ const Gallery = () => {
 
             <div className="image-gallery">
 
-
+          <div className="photo">
            <ImageViewer>
-            <img src={Gallery1} height={500} alt="" />
+            <img src={Gallery1} height={200} alt="" />
           </ImageViewer>
-
+          </div>
+          <div className="photo">
           <ImageViewer>
-            <img src={Gallery1} height={500} alt="" />
+            <img src={Gallery1} height={200} alt="" />
           </ImageViewer>
+          </div>
+          <div className="photo">
           <ImageViewer>
-            <img src={Gallery1} height={500} alt="" />
+            <img src={Gallery1} height={200} alt="" />
           </ImageViewer>
-
+          </div>
+          <div className="photo">
           <ImageViewer>
-            <img src={Gallery1} height={500} alt="" />
+            <img src={Gallery1} height={200} alt="" />
           </ImageViewer>
+          </div>
+          <div className="photo">
           <ImageViewer>
-            <img src={Gallery1} height={500} alt="" />
+            <img src={Gallery1} height={200} alt="" />
           </ImageViewer>
+          </div>
+          <div className="photo">
+          <ImageViewer>
+            <img src={Gallery1} height={200} alt="" />
+          </ImageViewer>
+          </div>
+          <div className="photo">
+          <ImageViewer>
+            <img src={Gallery1} height={200} alt="" />
+          </ImageViewer>
+          </div>
+          <div className="photo">
+          <ImageViewer>
+            <img src={Gallery1} height={200} alt="" />
+          </ImageViewer>
+          </div>
           </div>
 
 

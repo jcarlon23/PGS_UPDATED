@@ -8,8 +8,9 @@ body {
 .social-media-icons-white a {
 
 color: white;
-font-size: 22px;
 text-decoration: none;
+border-radius:100%;
+font-size: 22px;
 
 }
 
