@@ -1,0 +1,10 @@
+
+.image-gallery {
+
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3vw);
+  grid-gap: 1.5rem;
+
+}

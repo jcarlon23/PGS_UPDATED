@@ -1,10 +1,9 @@
 import React from 'react'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 
 
@@ -16,32 +15,42 @@ const Footer = () => {
 
       <div className="singleCol social-media-icons-white d-flex justify-content-evenly">
       <div className="copywright">
-       <a href="https://jameswebpages.com/">
+      <Link to="https://jameswebpages.com/">
       <p>&copy; Copywright by James's web pages</p>
-      </a>
+      </Link>
       </div>
        <h4 className="_14">Follow us on: </h4>
        <div className="facebook">
-       <a href="https://www.facebook.com/pgs.palermo.5">
+       <Link to="https://www.facebook.com/pgs.palermo.5">
        <FontAwesomeIcon icon={faFacebook} />
-       </a>
+       </Link>
        </div>
        <div className="instagram">
-       <a href="https://www.instagram.com/pgspalermo/">
+       <Link to="https://www.instagram.com/pgspalermo/">
        <FontAwesomeIcon icon={faInstagram} />
-       </a>
+       </Link>
        </div>
        <div className="youtube">
-       <a href="https://www.youtube.com/@PgsItalia79">
+       <Link to="https://www.youtube.com/@PgsItalia79">
        <FontAwesomeIcon icon={faYoutube} />
-       </a>
+       </Link>
       </div>
        </div>
        </div>
 
+)
+}
 
+  function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
-
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
 
 
 

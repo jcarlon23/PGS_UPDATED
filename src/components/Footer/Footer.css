@@ -1,18 +1,9 @@
-body{
+body {
 
   min-height: 100vh;
   color: white;
-
-
 }
-.singleCol {
 
-  max-width: 4750px;
-  margin: 0 auto;
-
-
-
-}
 
 .social-media-icons-white a {
 
@@ -45,7 +36,14 @@ text-decoration: none;
 
 .footer {
 background-color:rgb(73, 73, 83);
+bottom: 0;
+width: 100%;
 
 
+}
 
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
 }

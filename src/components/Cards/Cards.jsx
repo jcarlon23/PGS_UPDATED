@@ -44,14 +44,14 @@ wrapper.forEach(element => {
 
 
   return (
-<div class="container">
-  <div class="cardWrap">
-    <div class="card">
-      <div class="cardBg">
+<div className="container">
+  <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
     <img src={card2} height={500} alt="card2" />
      </div>
-     <div class="cardInfo">
-        <h3 class="cardTitle">
+     <div className="cardInfo">
+        <h3 className="cardTitle">
           Sign up Now !!!
         </h3>
         <p>Come and enjoy the fun with us at Gambarie</p>
@@ -59,13 +59,14 @@ wrapper.forEach(element => {
      </div>
      </div>
 
-    <div class="cardWrap">
-    <div class="card">
-      <div class="cardBg">
+
+    <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
     <img src={card3} height={500} alt="card3" />
      </div>
-    <div class="cardInfo">
-        <h3 class="cardTitle">
+    <div className="cardInfo">
+        <h3 className="cardTitle">
           Sign up Now !!!
         </h3>
         <p>Come and enjoy the fun with us at Gambarie</p>
@@ -73,13 +74,13 @@ wrapper.forEach(element => {
      </div>
      </div>
 
-    <div class="cardWrap">
-    <div class="card">
-      <div class="cardBg">
+    <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
     <img src={card4} height={500} alt="card4" />
      </div>
-    <div class="cardInfo">
-        <h3 class="cardTitle">
+    <div className="cardInfo">
+        <h3 className="cardTitle">
           Sign up Now !!!
         </h3>
         <p>Come and enjoy the fun with us at Gambarie</p>
@@ -87,13 +88,13 @@ wrapper.forEach(element => {
      </div>
      </div>
 
-     <div class="cardWrap">
-    <div class="card">
-      <div class="cardBg">
+     <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
     <img src={card5} height={500} alt="card5" />
     </div>
-    <div class="cardInfo">
-        <h3 class="cardTitle">
+    <div className="cardInfo">
+        <h3 className="cardTitle">
           Sign up Now !!!
         </h3>
         <p>Come and enjoy the fun with us at Gambarie</p>
