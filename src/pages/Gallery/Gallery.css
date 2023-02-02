@@ -1,14 +1,9 @@
 .photo {
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-top-color: cornsilk;
+
   margin: 20px;
 
 
 }
-
-
 
 .image-gallery {
 
@@ -17,13 +12,159 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-
-
 }
 
+.caption {
+    font-size: 1.0rem;
+    text-align: center;
+    line-height: 2em;
+    background-color: #E9E9E9;
+		color: #333;
+		font-family:"Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
+  }
+
+  .middle img {
+
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    border-radius: 50%;
+
+  }
+
+  .card1 {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    border: 10px;
+  border-style: solid;
+  border-color: #E9E9E9;
+  border-top-color: #E9E9E9;
+
+  }
+
+  .card2 {
+    position: absolute;
+    left: 20px;
+    top: 400px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card3 {
+    position: absolute;
+    left: 20px;
+    top: 600px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card4 {
+    position: absolute;
+    left: 120px;
+    top: 800px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card5 {
+    position: absolute;
+    left: 120px;
+    top: 800px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card6 {
+    position: absolute;
+    left: 350px;
+    top: 820px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card7 {
+    position: absolute;
+    left: 630px;
+    top: 600px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+
+  }
+
+  .card8 {
+    position: absolute;
+    left: 620px;
+    top: 400px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card9 {
+    position: absolute;
+    left: 600px;
+    top: 800px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card10 {
+    position: absolute;
+    left: 420px;
+    top: 200px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
 
 
+
+
+  .Golfo img {
+
+    position: absolute;
+    right: 200px;
+    top: 1000px;
+    border-radius: 50%;
+
+  }
+
+  .School video {
+
+    position: absolute;
+    right: 200px;
+    top: 1500px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+   padding-bottom: 30px;
+
+
+
+
+  }
 
 
 
