@@ -5,7 +5,7 @@ import front from './Video.mp4'
 
 const Video = () => {
   return (
-    <div class Name='main'>
+    <div className='main'>
     <video src={front} autoPlay loop muted />
     </div>
   )

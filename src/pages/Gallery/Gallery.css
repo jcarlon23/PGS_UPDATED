@@ -146,38 +146,293 @@
 
     position: absolute;
     right: 200px;
-    top: 1000px;
+    top: 1200px;
     border-radius: 50%;
 
   }
+
+  .card11 {
+    position: absolute;
+    right: 50px;
+    top: 1200px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card12 {
+    position: absolute;
+    right: 270px;
+    top: 1000px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card13 {
+    position: absolute;
+    right: 500px;
+    top: 1000px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card14 {
+    position: absolute;
+    right: 600px;
+    top: 1200px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card15 {
+    position: absolute;
+    right: 620px;
+    top: 1420px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card16 {
+    position: absolute;
+    right: 400px;
+    top: 1650px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card17 {
+    position: absolute;
+    right: 100px;
+    top: 1650px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+
+  .card18 {
+    position: absolute;
+    right: 120px;
+    top: 1650px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card19 {
+    position: absolute;
+    right: 50px;
+    top: 1450px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+
+
 
   .School video {
 
     position: absolute;
-    right: 200px;
-    top: 1500px;
-    height: 400px;
-    width: 400px;
+    left: 200px;
+    top: 2200px;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
-   padding-bottom: 30px;
+
+  }
+
+  .card20 {
+    position: absolute;
+    left: 30px;
+    top: 2500px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card21 {
+    position: absolute;
+    left: 20px;
+    top: 2350px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
 
 
+  .card21 {
+    position: absolute;
+    left: 20px;
+    top: 2290px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
 
 
+  .card22 {
+    position: absolute;
+    left: 80px;
+    top: 2090px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card23 {
+    position: absolute;
+    left: 300px;
+    top: 2000px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card24 {
+    position: absolute;
+    left: 500px;
+    top: 2030px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card25 {
+    position: absolute;
+    left: 670px;
+    top: 2230px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card26 {
+    position: absolute;
+    left: 670px;
+    top: 2230px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card27 {
+    position: absolute;
+    left: 670px;
+    top: 2430px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card27 {
+    position: absolute;
+    left: 670px;
+    top: 2430px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card28 {
+    position: absolute;
+    left: 600px;
+    top: 2630px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card29 {
+    position: absolute;
+    left: 400px;
+    top: 2700px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
+  }
+
+  .card30 {
+    position: absolute;
+    left: 150px;
+    top: 2700px;
+    border: 10px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-top-color: #E9E9E9;
   }
 
 
 
 
 
-@media screen and (max-width:500px){
-  .container{
-      grid-template-columns: repeat(1,1fr);
-  }
-  .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
-      grid-column:span 1;
-  }
-}
+
+    .footprint{
+      background-image:url("https://www.pcsoleil.fr/footprint.svg");
+      width:50px;
+      height:50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: rotate(390deg);
+      position: absolute;
+      left: 600px;
+      opacity: 0;
+
+    }
+
+    .a{top:310px;}
+    .b{top:200px;left: 700px;transform: rotate(430deg);}
+    .c{top:150px;left: 850px;transform: rotate(430deg);}
+    .d{top:200px;left: 1000px;transform: rotate(141deg);}
+    .e{top:350px;left: 1100px;transform: rotate(135deg);}
+    .f{top:550px;left: 1300px;transform: rotate(150deg);}
+    .g{top:750px;left: 1450px;transform: rotate(150deg);}
+    .h{top:900px;left: 1550px;transform: rotate(166deg);}
+    .i{top:1100px;left: 1550px;transform: rotate(190deg);}
+    .j{top:1600px;left: 1150px;transform: rotate(220deg);}
+    .k{top:1740px;left: 1020px;transform: rotate(229deg);}
+    .l{top:1980px;left: 800px;transform: rotate(205deg);}
+    .m{top:2150px;left: 660px;transform: rotate(205deg);}
+    .n{top:1870px;left: 900px;transform: rotate(203deg);}
+    .o{top:2450px;left: 350px;transform: rotate(192deg);}
+    .p{ top:2600px; left:300px; transform: rotate(180deg);}
+
+
+    @media screen and (max-width:500px){
+      .container{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+          grid-column:span 1;
+      }
+    }
+
 
 
 @keyframes move-down{

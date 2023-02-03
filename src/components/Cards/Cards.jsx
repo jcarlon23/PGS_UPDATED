@@ -40,6 +40,7 @@ wrapper.forEach(element => {
     card.style.transform = `rotateY(0deg) rotateX(0deg) `;
     cardBg.style.transform = `translateX(0px) translateY(0px)`;
   });
+
 });
 
 
