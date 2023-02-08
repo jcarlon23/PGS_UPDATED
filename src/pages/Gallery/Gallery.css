@@ -151,15 +151,7 @@
 
   }
 
-  .card11 {
-    position: absolute;
-    right: 50px;
-    top: 1200px;
-    border: 10px;
-    border-style: solid;
-    border-color: #E9E9E9;
-    border-top-color: #E9E9E9;
-  }
+  
 
   .card12 {
     position: absolute;
@@ -249,8 +241,8 @@
 
   .card20 {
     position: absolute;
-    left: 30px;
-    top: 2500px;
+    right: 50px;
+    top: 1200px;
     border: 10px;
     border-style: solid;
     border-color: #E9E9E9;
