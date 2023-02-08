@@ -211,15 +211,6 @@
     border-top-color: #E9E9E9;
   }
 
-  .card17 {
-    position: absolute;
-    right: 100px;
-    top: 1650px;
-    border: 10px;
-    border-style: solid;
-    border-color: #E9E9E9;
-    border-top-color: #E9E9E9;
-  }
 
 
   .card18 {
@@ -393,8 +384,7 @@
 
 
 
-    .footprint{
-      background-image:url("https://www.pcsoleil.fr/footprint.svg");
+    .footprint {
       width:50px;
       height:50px;
       background-size: contain;
@@ -404,7 +394,11 @@
       left: 600px;
       opacity: 0;
 
+
     }
+
+
+
 
     .a{top:310px;}
     .b{top:200px;left: 700px;transform: rotate(430deg);}
@@ -412,16 +406,23 @@
     .d{top:200px;left: 1000px;transform: rotate(141deg);}
     .e{top:350px;left: 1100px;transform: rotate(135deg);}
     .f{top:550px;left: 1300px;transform: rotate(150deg);}
-    .g{top:750px;left: 1450px;transform: rotate(150deg);}
-    .h{top:900px;left: 1550px;transform: rotate(166deg);}
-    .i{top:1100px;left: 1550px;transform: rotate(190deg);}
-    .j{top:1600px;left: 1150px;transform: rotate(220deg);}
-    .k{top:1740px;left: 1020px;transform: rotate(229deg);}
-    .l{top:1980px;left: 800px;transform: rotate(205deg);}
-    .m{top:2150px;left: 660px;transform: rotate(205deg);}
-    .n{top:1870px;left: 900px;transform: rotate(203deg);}
-    .o{top:2450px;left: 350px;transform: rotate(192deg);}
-    .p{ top:2600px; left:300px; transform: rotate(180deg);}
+    .g{top:750px;left: 1350px;transform: rotate(190deg);}
+    .h{top:900px;left: 1300px;transform: rotate(176deg);}
+    .i{top:1100px;left: 1220px;transform: rotate(190deg);}
+    .j{top:1600px;left: 1100px;transform: rotate(200deg);}
+    .k{top:1740px;left: 1070px;transform: rotate(209deg);}
+    .l{top:1980px;left: 900px;transform: rotate(205deg);}
+    .m{top:2070px;left: 800px;transform: rotate(205deg);}
+    .n{top:1870px;left: 1000px;transform: rotate(203deg);}
+    .o{top:2150px;left: 690px;transform: rotate(206deg);}
+    .p{ top:2700px; left:320px; transform: rotate(180deg);}
+
+
+
+
+
+
+
 
 
     @media screen and (max-width:500px){

@@ -1,15 +1,21 @@
-import React from 'react';
+
+import React, { useEffect } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Gallery.css";
 import Gallery1 from "./Gallery1.png";
 import Golfo from "./Golfo.png";
 import School from "./School.mp4";
 import Gambarie from "./Gambarie.png";
+import foot from "./foot.png";
 import { ImageViewer } from "react-image-viewer-dv";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 
 
@@ -24,11 +30,25 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Gallery = () => {
 
-  ScrollTrigger.batch(".footprint", {
-    start: "top 80%",
-    onEnter: elements => gsap.to(elements, {opacity: 1, stagger: 0.1}),
-    onLeaveBack: elements => gsap.set(elements, {opacity: 0})
-  });
+
+
+
+
+  useEffect(() => {
+
+  gsap.to('.footprint', {
+    opacity: 1,
+    stagger: 0.1,
+    scrollTrigger: {
+      start: 0,
+      end: 'max',
+      scrub: 1
+
+    }
+  })
+
+});
+
 
 
 
@@ -36,6 +56,11 @@ const Gallery = () => {
 
 
   return (
+
+
+
+
+
 
 
             <div className="image-gallery">
@@ -134,27 +159,29 @@ const Gallery = () => {
 
 
 
+<div className='footprint'>
 
-  <div className="a footprint"></div>
-  <div className="b footprint"></div>
-  <div className="c footprint"></div>
-  <div className="d footprint"></div>
-  <div className="e footprint"></div>
-  <div className="f footprint"></div>
-  <div className="g footprint"></div>
-  <div className="h footprint"></div>
-  <div className="i footprint"></div>
-  <div className="j footprint"></div>
-  <div className="k footprint"></div>
-  <div className="l footprint"></div>
-  <div className="m footprint"></div>
-  <div className="n footprint"></div>
-  <div className="o footprint"></div>
-  <div className="p footprint"></div>
+  <img src={foot} className="a footprint" alt="footprint"/>
+  <img src={foot} className="b footprint" alt="footprint"/>
+  <img src={foot} className="c footprint" alt="footprint"/>
+  <img src={foot} className="d footprint" alt="footprint"/>
+  <img src={foot} className="e footprint" alt="footprint"/>
+  <img src={foot} className="f footprint" alt="footprint"/>
+  <img src={foot} className="g footprint" alt="footprint"/>
+  <img src={foot} className="h footprint" alt="footprint"/>
+  <img src={foot} className="i footprint" alt="footprint"/>
+  <img src={foot} className="j footprint" alt="footprint"/>
+  <img src={foot} className="k footprint" alt="footprint"/>
+  <img src={foot} className="l footprint" alt="footprint"/>
+  <img src={foot} className="m footprint" alt="footprint"/>
+  <img src={foot} className="n footprint" alt="footprint"/>
+  <img src={foot} className="o footprint" alt="footprint"/>
+  <img src={foot} className="p footprint" alt="footprint"/>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
-
-
+</div>
 
 
         <div className="image-gallery2">
@@ -211,14 +238,6 @@ const Gallery = () => {
           </div>
           <div className="photo">
           <div className="card16">
-          <ImageViewer>
-            <img src={Gallery1} height={100} alt="" />
-            <div className="caption">I Miss London</div>
-          </ImageViewer>
-          </div>
-          </div>
-          <div className="photo">
-          <div className="card17">
           <ImageViewer>
             <img src={Gallery1} height={100} alt="" />
             <div className="caption">I Miss London</div>
