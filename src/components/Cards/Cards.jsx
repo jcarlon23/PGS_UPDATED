@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, { useEffect } from 'react';
 import card2 from "./PGS2.png"
 import card3 from "./PGS3.png"
 import card4 from "./PGS4.png"
@@ -6,6 +7,7 @@ import card5 from "./PGS5.png"
 import "./Cards.css";
 
 const Cards = () => {
+  useEffect(() => {
 
 const wrapper = document.querySelectorAll(".cardWrap");
 
@@ -40,6 +42,7 @@ wrapper.forEach(element => {
     card.style.transform = `rotateY(0deg) rotateX(0deg) `;
     cardBg.style.transform = `translateX(0px) translateY(0px)`;
   });
+})
 
 });
 

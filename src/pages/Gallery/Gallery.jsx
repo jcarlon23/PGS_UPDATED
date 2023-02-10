@@ -35,7 +35,7 @@ import Bosco6 from "./Bosco6.png";
 import Bosco7 from "./Bosco7.png";
 import Bosco8 from "./Bosco8.png";
 import Bosco9 from "./Bosco9.png";
-import Bosco10 from "./Bosco10.png";
+
 
 
 
