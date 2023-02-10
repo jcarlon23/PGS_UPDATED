@@ -383,14 +383,6 @@ const Gallery = () => {
           </ImageViewer>
           </div>
           </div>
-          <div className="photo">
-          <div className="card30">
-          <ImageViewer>
-            <img src={Bosco10} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
-          </ImageViewer>
-          </div>
-          </div>
           </div>
           </div>
 

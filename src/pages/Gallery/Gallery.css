@@ -6,12 +6,15 @@
 }
 
 .image-gallery {
-
-  margin-top: 200px;
+  position: relative;
+   margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+
+
 }
 
 .caption {
@@ -151,7 +154,7 @@
 
   }
 
-  
+
 
   .card12 {
     position: absolute;
@@ -303,8 +306,8 @@
 
   .card25 {
     position: absolute;
-    left: 670px;
-    top: 2230px;
+    left: 150px;
+    top: 2700px;
     border: 10px;
     border-style: solid;
     border-color: #E9E9E9;
@@ -313,8 +316,8 @@
 
   .card26 {
     position: absolute;
-    left: 670px;
-    top: 2230px;
+    left: 20px;
+    top: 2500px;
     border: 10px;
     border-style: solid;
     border-color: #E9E9E9;
@@ -361,19 +364,6 @@
     border-top-color: #E9E9E9;
   }
 
-  .card30 {
-    position: absolute;
-    left: 150px;
-    top: 2700px;
-    border: 10px;
-    border-style: solid;
-    border-color: #E9E9E9;
-    border-top-color: #E9E9E9;
-  }
-
-
-
-
 
 
     .footprint {
@@ -392,19 +382,19 @@
 
 
 
-    .a{top:310px;}
-    .b{top:200px;left: 700px;transform: rotate(430deg);}
-    .c{top:150px;left: 850px;transform: rotate(430deg);}
-    .d{top:200px;left: 1000px;transform: rotate(141deg);}
-    .e{top:350px;left: 1100px;transform: rotate(135deg);}
-    .f{top:550px;left: 1300px;transform: rotate(150deg);}
-    .g{top:750px;left: 1350px;transform: rotate(190deg);}
-    .h{top:900px;left: 1300px;transform: rotate(176deg);}
-    .i{top:1100px;left: 1220px;transform: rotate(190deg);}
-    .j{top:1600px;left: 1100px;transform: rotate(200deg);}
-    .k{top:1740px;left: 1070px;transform: rotate(209deg);}
-    .l{top:1980px;left: 900px;transform: rotate(205deg);}
-    .m{top:2070px;left: 800px;transform: rotate(205deg);}
+    .a{top:240px;left: 150px;transform: rotate(30deg);}
+    .b{top:120px;left: 290px;transform: rotate(430deg);}
+    .c{top:150px;left: 450px;transform: rotate(460deg);}
+    .d{top:180px;left: 650px;transform: rotate(451deg);}
+    .e{top:230px;left: 800px;transform: rotate(465deg);}
+    .f{top:350px;left: 1000px;transform: rotate(150deg);}
+    .g{top:550px;left: 1100px;transform: rotate(180deg);}
+    .h{top:700px;left: 1090px;transform: rotate(160deg);}
+    .i{top:1190px;left: 1230px;transform: rotate(150deg);}
+    .j{top:1400px;left: 1330px;transform: rotate(180deg);}
+    .k{top:1600px;left: 1300px;transform: rotate(180deg);}
+    .l{top:1780px;left: 1300px;transform: rotate(185deg);}
+    .m{top:1940px;left: 1250px;transform: rotate(205deg);}
     .n{top:1870px;left: 1000px;transform: rotate(203deg);}
     .o{top:2150px;left: 690px;transform: rotate(206deg);}
     .p{ top:2700px; left:320px; transform: rotate(180deg);}
