@@ -5,6 +5,8 @@ import Back1 from "./Back1.png";
 
 
 const Contact = () => {
+
+
   return (
     <div class="container">
 	<div class="row">
@@ -12,28 +14,43 @@ const Contact = () => {
 	</div>
 	<div class="row">
 			<h10>Ci piacerebbe sentirti!</h10>
-      <div class="flip">
-      <div class="row"></div>
-
       <div className="person">
       <div className="person1">
       <div className="container2">
-        <div className="container-inner2">
-          
+      <div class="flip-person">
+  <div class="flip-person-inner">
+    <div class="flip-person-front">
         <img src={Pro1} height={320} width={320} alt="" />
         </div>
+        <div class="flip-person-back">
+      <h1>Sergio Ragusa</h1>
+    </div>
+  </div>
+</div>
         </div>
-      </div>
-      <div className="person2">
-      <div className="container2">
-        <div className="container-inner2">
-        <img src={Back1} height={320} width={320} alt="" />
-      </div>
-      </div>
+        </div>
+        </div>
+        </div>
+
+        <div className="person2">
+        <div className="container2">
+        <div class="flip-person">
+        <div class="flip-person-inner">
+        <div class="flip-person-front">
+       <img src={Back1} height={320} width={320} alt="" />
+        </div>
+        <div class="flip-person-back">
+      <h1>Fabio Puleo</h1>
+    </div>
+  </div>
       </div>
 </div>
 </div>
-</div>
+
+
+
+
+
 
 
 
@@ -64,14 +81,28 @@ const Contact = () => {
 					<textarea required></textarea>
 					<label>Message</label>
 				</div>
-			</div>
-			<div class="col-xs-12">
+        <div class="col-xs-12">
 				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
 			</div>
 	</div>
 </div>
 
+
+
+
+
+
+
+
   )
 }
+
+
+
+
+
+
+
 
 export default Contact
