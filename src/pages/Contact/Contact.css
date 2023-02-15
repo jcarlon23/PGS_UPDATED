@@ -250,8 +250,6 @@ font-style: normal;
   .flip-person-front, .flip-person-back {
     position: absolute;
     text-align: center;
-
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
   }
@@ -260,8 +258,6 @@ font-style: normal;
 
   .styled-input {
     width:100%;
-
-
 
 }
 
@@ -273,10 +269,6 @@ font-style: normal;
   width: 120px;
   height: 120px;
 
-
-
-
-
 }
 
 .flip-person {
@@ -287,13 +279,6 @@ font-style: normal;
   left: 90%;
   position: relative;
   top: 0%;
-
-
-
-
-
-
-
 }
 
 h9 {
@@ -364,24 +349,16 @@ h9 {
   textarea {
 
     padding: 30px;
-    border: 0;
     width: 370px;
-    font-size: 1rem;
-    background-color:rgb(73, 73, 83);
-    color: white;
-    border-radius: 5px;
+
+
 
   }
 
   input:focus,
   textarea:focus { outline: 0; }
 
-  input:focus ~ span,
-  textarea:focus ~ span {
-    width: 100%;
-    -webkit-transition: all 0.075s ease;
-    transition: all 0.075s ease;
-  }
+
 
   textarea {
     width: 370px;
