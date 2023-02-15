@@ -103,7 +103,7 @@ const Gallery = () => {
           <ImageViewer>
            <div className="card1">
             <img src={Gallery1} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Foto di gruppo PGS</div>
             </div>
           </ImageViewer>
           </div>
@@ -111,7 +111,7 @@ const Gallery = () => {
           <div className="card2">
           <ImageViewer>
             <img src={Gallery2} height={120} width={120}  alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Pronto per sciare</div>
           </ImageViewer>
           </div>
           </div>
@@ -119,7 +119,7 @@ const Gallery = () => {
             <div className="card3">
           <ImageViewer>
             <img src={Gallery3} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Andiamo !!!</div>
           </ImageViewer>
           </div>
           </div>
@@ -127,7 +127,7 @@ const Gallery = () => {
           <div className="card4">
           <ImageViewer>
             <img src={Gallery4} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Sorprendente</div>
           </ImageViewer>
           </div>
           </div>
@@ -146,7 +146,7 @@ const Gallery = () => {
           <div className="card5">
           <ImageViewer>
             <img src={Gallery5} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">@Gambarie</div>
           </ImageViewer>
           </div>
           </div>
@@ -154,7 +154,7 @@ const Gallery = () => {
           <div className="card6">
           <ImageViewer>
             <img src={Gallery6} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Foto di gruppo</div>
           </ImageViewer>
           </div>
           </div>
@@ -162,7 +162,7 @@ const Gallery = () => {
           <div className="card7">
           <ImageViewer>
             <img src={Gallery7} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Foto di gruppo</div>
           </ImageViewer>
           </div>
           </div>
@@ -170,7 +170,7 @@ const Gallery = () => {
           <div className="card8">
           <ImageViewer>
             <img src={Gallery8} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Orario dell'albergo</div>
           </ImageViewer>
           </div>
           </div>
@@ -178,7 +178,7 @@ const Gallery = () => {
           <div className="card9">
           <ImageViewer>
             <img src={Gallery9} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di sci</div>
           </ImageViewer>
           </div>
           </div>
@@ -186,7 +186,7 @@ const Gallery = () => {
           <div className="card10">
           <ImageViewer>
             <img src={Gallery10} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Pista da sci</div>
           </ImageViewer>
           </div>
           </div>
@@ -224,7 +224,7 @@ const Gallery = () => {
           <div className="card12">
           <ImageViewer>
             <img src={Citta2} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di calcio !</div>
           </ImageViewer>
           </div>
           </div>
@@ -232,7 +232,7 @@ const Gallery = () => {
             <div className="card13">
           <ImageViewer>
             <img src={Citta3} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Teatro</div>
           </ImageViewer>
           </div>
           </div>
@@ -240,7 +240,7 @@ const Gallery = () => {
           <div className="card14">
           <ImageViewer>
             <img src={Citta4} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di pallavolo</div>
           </ImageViewer>
           </div>
           </div>
@@ -259,7 +259,7 @@ const Gallery = () => {
           <div className="card15">
           <ImageViewer>
             <img src={Citta5} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Teatro</div>
           </ImageViewer>
           </div>
           </div>
@@ -267,7 +267,7 @@ const Gallery = () => {
           <div className="card16">
           <ImageViewer>
             <img src={Citta6} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di basket</div>
           </ImageViewer>
           </div>
           </div>
@@ -275,7 +275,7 @@ const Gallery = () => {
           <div className="card18">
           <ImageViewer>
             <img src={Citta7} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Pallavolo pronto!</div>
           </ImageViewer>
           </div>
           </div>
@@ -283,7 +283,7 @@ const Gallery = () => {
           <div className="card19">
           <ImageViewer>
             <img src={Citta8} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Foto di gruppo</div>
           </ImageViewer>
           </div>
           </div>
@@ -291,7 +291,7 @@ const Gallery = () => {
           <div className="card20">
           <ImageViewer>
             <img src={Citta1} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo rilassante</div>
           </ImageViewer>
           </div>
           </div>
@@ -304,7 +304,7 @@ const Gallery = () => {
           <ImageViewer>
            <div className="card21">
             <img src={Bosco1} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Scacchi!!</div>
             </div>
           </ImageViewer>
           </div>
@@ -312,7 +312,7 @@ const Gallery = () => {
           <div className="card22">
           <ImageViewer>
             <img src={Bosco2} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di basket</div>
           </ImageViewer>
           </div>
           </div>
@@ -320,7 +320,7 @@ const Gallery = () => {
             <div className="card23">
           <ImageViewer>
             <img src={Bosco3} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tutti sono qui</div>
           </ImageViewer>
           </div>
           </div>
@@ -328,7 +328,7 @@ const Gallery = () => {
           <div className="card24">
           <ImageViewer>
             <img src={Bosco4} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Scherma!!!</div>
           </ImageViewer>
           </div>
           </div>
@@ -347,7 +347,7 @@ const Gallery = () => {
           <div className="card25">
           <ImageViewer>
             <img src={Bosco5} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Calcio !!</div>
           </ImageViewer>
           </div>
           </div>
@@ -355,7 +355,7 @@ const Gallery = () => {
           <div className="card26">
           <ImageViewer>
             <img src={Bosco6} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Medaglie!!</div>
           </ImageViewer>
           </div>
           </div>
@@ -363,7 +363,7 @@ const Gallery = () => {
           <div className="card27">
           <ImageViewer>
             <img src={Bosco7} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Chiesa</div>
           </ImageViewer>
           </div>
           </div>
@@ -371,7 +371,7 @@ const Gallery = () => {
           <div className="card28">
           <ImageViewer>
             <img src={Bosco8} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Tempo di pallavolo</div>
           </ImageViewer>
           </div>
           </div>
@@ -379,7 +379,7 @@ const Gallery = () => {
           <div className="card29">
           <ImageViewer>
             <img src={Bosco9} height={120} width={120} alt="" />
-            <div className="caption">I Miss London</div>
+            <div className="caption">Chiesa</div>
           </ImageViewer>
           </div>
           </div>
