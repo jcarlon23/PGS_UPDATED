@@ -4,6 +4,10 @@ import card2 from "./PGS2.png"
 import card3 from "./PGS3.png"
 import card4 from "./PGS4.png"
 import card5 from "./PGS5.png"
+import card6 from "./PGS6.png"
+import card7 from "./PGS7.png"
+import card8 from "./PGS8.png"
+import card9 from "./PGS9.png"
 import "./Cards.css";
 
 const Cards = () => {
@@ -56,9 +60,9 @@ wrapper.forEach(element => {
      </div>
      <div className="cardInfo">
         <h3 className="cardTitle">
-          Sign up Now !!!
+          Sta accadendo ora !! 🏂 ⛷️
         </h3>
-        <p>Come and enjoy the fun with us at Gambarie</p>
+        <p>Vieni a divertirti con noi di Gambarie!!</p>
      </div>
      </div>
      </div>
@@ -71,9 +75,9 @@ wrapper.forEach(element => {
      </div>
     <div className="cardInfo">
         <h3 className="cardTitle">
-          Sign up Now !!!
+        Programma per Gambarie 📖 📖
         </h3>
-        <p>Come and enjoy the fun with us at Gambarie</p>
+        <p>Vieni a divertirti con noi di Gambarie!!</p>
      </div>
      </div>
      </div>
@@ -81,13 +85,13 @@ wrapper.forEach(element => {
     <div className="cardWrap">
     <div className="card">
       <div className="cardBg">
-    <img src={card4} height={500} alt="card4" />
+    <img src={card6} height={500} alt="card6" />
      </div>
     <div className="cardInfo">
         <h3 className="cardTitle">
-          Sign up Now !!!
+        Programma per Gambarie 📖 📖
         </h3>
-        <p>Come and enjoy the fun with us at Gambarie</p>
+        <p> 21, 22, 23, 24 Febbraio.</p>
      </div>
      </div>
      </div>
@@ -95,17 +99,72 @@ wrapper.forEach(element => {
      <div className="cardWrap">
     <div className="card">
       <div className="cardBg">
-    <img src={card5} height={500} alt="card5" />
+    <img src={card7} height={500} alt="card7" />
     </div>
     <div className="cardInfo">
         <h3 className="cardTitle">
-          Sign up Now !!!
+        Ginnastica Ritmica 🩰
         </h3>
-        <p>Come and enjoy the fun with us at Gambarie</p>
+        <p>Vieni e unisciti a noi !!</p>
+     </div>
+     </div>
+     </div>
+
+     <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
+    <img src={card9} height={500} alt="card9" />
+     </div>
+    <div className="cardInfo">
+        <h3 className="cardTitle">
+        Promo Twirling 🩰 🩰
+        </h3>
+        <p>Vieni e unisciti a noi !!</p>
+     </div>
+     </div>
+     </div>
+     <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
+    <img src={card8} height={500} alt="card8" />
+     </div>
+    <div className="cardInfo">
+        <h3 className="cardTitle">
+
+        Le 𝗣𝗜𝗚𝗜𝗘𝗦𝗦𝗜𝗔𝗗𝗜 𝟮𝟬𝟮𝟯 si svolgeranno a Ragusa</h3>
+        <p>- Athena resort 🏨 🏨</p>
+     </div>
+     </div>
+     </div>
+     <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
+    <img src={card5} height={500} alt="card5" />
+     </div>
+    <div className="cardInfo">
+        <h3 className="cardTitle">
+        Corso Aggiornamento Allenatore PGS ⚽ ⚽
+        </h3>
+        <p>Vieni e unisciti a noi !!</p>
+     </div>
+     </div>
+     </div>
+     <div className="cardWrap">
+    <div className="card">
+      <div className="cardBg">
+    <img src={card4} height={500} alt="card4" />
+     </div>
+    <div className="cardInfo">
+        <h3 className="cardTitle">
+        Guarda questo 👀 👀
+        </h3>
+        <p>..............</p>
      </div>
      </div>
      </div>
      </div>
+
+
 
 
 
