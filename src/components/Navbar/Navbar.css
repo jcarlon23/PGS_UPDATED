@@ -1,41 +1,61 @@
 .header {
-  position: absolute;
-  height: 150px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: .3s ease-in;
-  overflow: hidden;
+  background-color: white;
+  /* position: absolute; */
+  /* height: 150px; */
+  /* width: 100%; */
+  /* top: 0; */
+  /* left: 0; */
+  /* z-index: 1; */
+  /* transition: 0.3s ease-in; */
+  /* overflow: hidden; */
+}
+
+.header:after {
+  content:'';
+  display: block;
+  height: 4px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background: rgb(43, 148, 215);
+  background: linear-gradient(
+    90deg,
+    #233d4d 0%,
+    #233d4d 20%,
+    #fe7f2d 20%,
+    #fe7f2d 40%,
+    #fcca46 40%,
+    #fcca46 60%,
+    #a1c181 60%,
+    #a1c181 80%,
+    #619b8a 80%,
+    #619b8a 100%
+  );
 }
 
 .header .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1240px;
-  margin: auto;
-  height: 100%;
-  padding: 0 1rem;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* max-width: 1240px; */
+  /* margin: auto; */
+  /* height: 100%; */
+  /* padding: 0 1rem; */
 }
-
-
 
 .header .nav-menu a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.15em;
+  /* letter-spacing: 0.15em; */
   display: inline-block;
   padding: 10px 10px;
-  position: relative;
-
+  /* position: relative; */
 }
 
 .header .navbar img {
   width: 250px;
   height: auto;
-  margin-left: 2px;
+  /* margin-left: 2px; */
 }
 
 .header .nav-menu {
@@ -48,53 +68,46 @@
   list-style: none;
 }
 
-
-
-
 .hamburger {
   display: none;
 }
-
-
-@media screen and (max-width:940px) {
+/*
+@media screen and (max-width: 940px) {
   .header {
-      max-width: 100%;
-
+    max-width: 100%;
   }
 
   .header .navbar {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .hamburger {
-      display: block;
-
+    display: block;
   }
 
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 90px;
-      flex-direction: column;
-      width: 100%;
-      height: 90vh;
-      z-index: 999;
-      text-align: center;
-      transition: .3s;
-
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
   }
 
   .nav-menu.active {
-      left: 0;
-      background-color: rgba(0,0,0,.9);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .nav-item {
-      margin: 1.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .header .navbar img {
-      width: 150px;
+    width: 150px;
   }
 }
 
@@ -126,7 +139,7 @@
   left: 0;
 }
 @media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
-}
+  ul {
+    margin-top: 40px;
+  }
+} */
