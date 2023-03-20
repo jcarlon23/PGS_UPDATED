@@ -3,13 +3,13 @@ import { Cards, Intro, Video } from "../../components";
 import front from "./PGS_Palermo.mp4";
 
 import card2 from "../../assets/cards/PGS2.png";
-import card3 from "../../assets/cards/PGS3.png";
-import card4 from "../../assets/cards/PGS4.png";
-import card5 from "../../assets/cards/PGS5.png";
-import card6 from "../../assets/cards/PGS6.png";
-import card7 from "../../assets/cards/PGS7.png";
-import card8 from "../../assets/cards/PGS8.png";
-import card9 from "../../assets/cards/PGS9.png";
+import card5 from "../../assets/cards/PGS3.png";
+import card9 from "../../assets/cards/PGS4.png";
+import card3 from "../../assets/cards/PGS5.png";
+import card7 from "../../assets/cards/PGS6.png";
+import card8 from "../../assets/cards/PGS7.png";
+import card6 from "../../assets/cards/PGS8.png";
+import card4 from "../../assets/cards/PGS9.png";
 
 // const Home = () => {
 //   return (

@@ -51,9 +51,9 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="About md:columns-2 mt-8">
-      <div className="container mx-auto">
-        <h1 className="text-center text-7xl mb-4">CHI SIAMO</h1>
+    <div className="About md:columns-2 mt-40 rounded-lg ">
+      <div className="container mx-auto bg-slate-600 rounded-lg ">
+        <h1 className="text-center text-7xl mb-4 tracking-widest ">CHI SIAMO</h1>
 
         <p className="text-xl mb-4">
           L’Associazione Nazionale "POLISPORTIVE GIOVANILI SALESIANE" già
@@ -69,7 +69,7 @@ const About = () => {
           sensi dell’art. 31 del DPR n. 530/1974, e, successivamente, con
           delibere del 27 febbraio 2002 e del 18 dicembre 2008.
         </p>
-        <p>
+        <p className="text-xl mb-4">
           È riconosciuta Ente Nazionale a carattere assistenziale con i Decreti
           del Ministero dell’Interno n. 10.6255/12000.A (78) del 22 febbraio
           1984 e n. 10.14116/12000.A (78) del 17 ottobre 1984 ai sensi dell’art.
