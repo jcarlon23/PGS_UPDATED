@@ -11,19 +11,17 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <>
-      <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
-        <div className="App">
-          <Navbar />
+      <div className="App">
+        <Navbar />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="Gallery" element={<Gallery />} />
-            <Route path="About" element={<About />} />
-            <Route path="ContactUs" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </div>
-      </Box>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Gallery" element={<Gallery />} />
+          <Route path="About" element={<About />} />
+          <Route path="ContactUs" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

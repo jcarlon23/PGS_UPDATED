@@ -23,14 +23,14 @@ import card4 from "../../assets/cards/PGS9.png";
 // };
 
 const activities = [
-  { label: "sciare", img: card2 },
-  { label: "pallacanestro", img: card3 },
-  { label: "pallavolo", img: card4 },
-  { label: "calcio a cinque", img: card5 },
-  { label: "canoa", img: card6 },
-  { label: "scherma", img: card7 },
-  { label: "scacchi", img: card8 },
-  { label: "celebrazione eucaristica", img: card9 },
+  { label: "Sciare", img: card2 },
+  { label: "Pallacanestro", img: card3 },
+  { label: "Pallavolo", img: card4 },
+  { label: "Calcio a cinque", img: card5 },
+  { label: "Canoa", img: card6 },
+  { label: "Scherma", img: card7 },
+  { label: "Scacchi", img: card8 },
+  { label: "Celebrazione eucaristica", img: card9 },
 ];
 
 const cards = [

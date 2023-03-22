@@ -11,6 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="header">
+    <div className="container">
       <nav className="navbar">
         <Link to="/" className="logo">
           <img src={logo} alt="PGS Palermo logo" />
@@ -23,28 +24,29 @@ const Navbar = () => {
           )}
         </div>
         <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
+          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
             <Link to="/" onClick={hideMobileMenu}>
-              Home
+              HOME
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
             <Link to="About" onClick={hideMobileMenu}>
-              Chi siamo
+              CHI SIAMO
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="Gallery" onClick={hideMobileMenu}>
-              Galleria
+          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
+            <Link to="Gallery " onClick={hideMobileMenu}>
+              GALLERIA
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
             <Link to="ContactUs" onClick={hideMobileMenu}>
-              Contattaci
+              CONTATTACI
             </Link>
           </li>
         </ul>
       </nav>
+    </div>
     </div>
   );
 };
