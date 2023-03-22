@@ -11,42 +11,42 @@ const Navbar = () => {
 
   return (
     <div className="header">
-    <div className="container">
-      <nav className="navbar">
-        <Link to="/" className="logo">
-          <img src={logo} alt="PGS Palermo logo" />
-        </Link>
-        <div className="hamburger" onClick={showMobileMenu}>
-          {showMenuForMobile ? (
-            <FaTimes size={30} style={{ color: "#ffffff" }} />
-          ) : (
-            <FaBars size={30} style={{ color: "#ffffff" }} />
-          )}
-        </div>
-        <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
-            <Link to="/" onClick={hideMobileMenu}>
-              HOME
-            </Link>
-          </li>
-          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
-            <Link to="About" onClick={hideMobileMenu}>
-              CHI SIAMO
-            </Link>
-          </li>
-          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
-            <Link to="Gallery " onClick={hideMobileMenu}>
-              GALLERIA
-            </Link>
-          </li>
-          <li className="nav-item rounded-md px-3 py-2 text-m font-medium text-black">
-            <Link to="ContactUs" onClick={hideMobileMenu}>
-              CONTATTACI
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div className="container">
+        <nav className="navbar">
+          <Link to="/" className="logo">
+            <img src={logo} alt="PGS Palermo logo" />
+          </Link>
+          <div className="hamburger" onClick={showMobileMenu}>
+            {showMenuForMobile ? (
+              <FaTimes size={30} style={{ color: "#ffffff" }} />
+            ) : (
+              <FaBars size={30} style={{ color: "#ffffff" }} />
+            )}
+          </div>
+          <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8 ">
+              <Link to="/" onClick={hideMobileMenu}>
+                HOME
+              </Link>
+            </li>
+            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
+              <Link to="About" onClick={hideMobileMenu}>
+                CHI SIAMO
+              </Link>
+            </li>
+            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
+              <Link to="Gallery " onClick={hideMobileMenu}>
+                GALLERIA
+              </Link>
+            </li>
+            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
+              <Link to="ContactUs" onClick={hideMobileMenu}>
+                CONTATTACI
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
