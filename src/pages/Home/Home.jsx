@@ -11,17 +11,6 @@ import card8 from "../../assets/cards/PGS7.png";
 import card6 from "../../assets/cards/PGS8.png";
 import card4 from "../../assets/cards/PGS9.png";
 
-// const Home = () => {
-//   return (
-//     <div>
-//       <div className="main">
-//         <video src={front} autoPlay loop muted />
-//       </div>
-//       <Intro />
-//       <Cards />//     </div>
-//   );
-// };
-
 const activities = [
   { label: "Sciare", img: card2 },
   { label: "Pallacanestro", img: card3 },
@@ -75,40 +64,78 @@ const cards = [
     text: "..............",
   },
 ];
+const Feed = React.memo((props) => {
+  React.useEffect(() => {
+    const script = document.createElement("script");
 
+    script.src =
+      "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=your-app-id&autoLogAppEvents=1";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <React.Fragment>
+      <div id="fb-root "></div>
+
+      <div
+        className="fb-page"
+        data-href="https://www.facebook.com/pgs.palermo.5"
+        data-show-posts="true"
+        data-width="500px"
+        data-height="500px"
+        data-small-header="false"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      >
+        <blockquote
+          cite="https://www.facebook.com/pgs.palermo.5"
+          className="fb-xfbml-parse-ignore"
+        >
+          <a href="https://www.facebook.com/pgs.palermo.5">Your Page</a>
+        </blockquote>
+      </div>
+    </React.Fragment>
+  );
+});
 const Home = () => {
   return (
     <div>
-      <div>Banner</div>
       <div>
-        <h2>
+        <video
+          src={front}
+          className=" w-auto min-w-full min-h-full max-w-none"
+          autoPlay
+          loop
+          muted
+        />
+      </div>
+      <div className="container py-20">
+        <h2 className="pt-20 pb-20  text-5xl text-center">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
-        <div className = "grid grid-cols-8 gap-4">
+        <div className="grid grid-cols-8 gap-4 pb-4 ml-8">
           {activities.map((activity) => (
-            <div>
-
-            <img src={activity.img} height={150} alt="card2" className = "rounded-full" />
-            <div className = "text-center text-xl mt-2">{activity.label}</div>
+            <div key={activity.img}>
+              <img
+                src={activity.img}
+                height={150}
+                alt="card2"
+                className="rounded-full"
+              />
+              <div className="text-center text-xl mt-2">{activity.label}</div>
             </div>
           ))}
         </div>
-      </div>
-      <div>
-        {cards.map((card) => (
-          <div className="cardWrap">
-            <div className="card">
-              <div className="cardBg">
-                <img src={card.img} height={500} alt="card2" />
-              </div>
-              <div className="cardInfo">
-                <h3 className="cardTitle">{card.title}</h3>
-                <p>{card.text}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+
+        <Feed />
       </div>
     </div>
   );
