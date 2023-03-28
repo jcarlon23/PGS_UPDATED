@@ -1,3 +1,4 @@
+import "./Home.css";
 import React from "react";
 import { Cards, Intro, Video } from "../../components";
 import front from "./PGS_Palermo.mp4";
@@ -12,8 +13,8 @@ import card6 from "../../assets/cards/PGS8.png";
 import card4 from "../../assets/cards/PGS9.png";
 
 const activities = [
-  { label: "Sciare", img: card2 },
-  { label: "Pallacanestro", img: card3 },
+  { label: "Sci", img: card2 },
+  { label: "Basket", img: card3 },
   { label: "Pallavolo", img: card4 },
   { label: "Calcio a cinque", img: card5 },
   { label: "Canoa", img: card6 },
@@ -108,28 +109,38 @@ const Home = () => {
   return (
     <div>
       <div>
+      <div className=" flex absolute inset-x-0 bottom-1/2 top-1/2 justify-center items-center text-9xl font-semibold tracking-wider ">
+        PGS PALERMO
+        </div>
+        <div className=" flex absolute inset-x-0 bottom-1/2 top-2/3	 justify-center items-center text-3xl font-semibold tracking-wider ">
+        Per saperne di più
+        </div>
+        <div className="arrow pt-20">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <video
           src={front}
-          className=" w-auto min-w-full min-h-full max-w-none"
+          className=" w-auto min-w-full max-w-none "
           autoPlay
           loop
           muted
         />
+
+
+
       </div>
+
       <div className="container py-20">
-        <h2 className="pt-20 pb-20  text-5xl text-center">
+        <h2 className="pt-20 pb-20  text-5xl text-center ">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
-        <div className="grid grid-cols-8 gap-4 pb-4 ml-8">
+        <div className="grid grid-cols-8 gap-4 pb-20 ml-8">
           {activities.map((activity) => (
             <div key={activity.img}>
-              <img
-                src={activity.img}
-                height={150}
-                alt="card2"
-                className="rounded-full"
-              />
+              <img src={activity.img} alt="card2" className="rounded-full" />
               <div className="text-center text-xl mt-2">{activity.label}</div>
             </div>
           ))}
