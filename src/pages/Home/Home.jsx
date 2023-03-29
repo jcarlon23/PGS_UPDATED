@@ -12,6 +12,11 @@ import card8 from "../../assets/cards/PGS7.png";
 import card6 from "../../assets/cards/PGS8.png";
 import card4 from "../../assets/cards/PGS9.png";
 
+import event1 from "../../assets/cards/event1.png";
+import event2 from "../../assets/cards/event2.png";
+import event3 from "../../assets/cards/event3.png";
+import event4 from "../../assets/cards/event4.png";
+
 const activities = [
   { label: "Sci", img: card2 },
   { label: "Basket", img: card3 },
@@ -23,48 +28,55 @@ const activities = [
   { label: "Celebrazione eucaristica", img: card9 },
 ];
 
-const cards = [
-  {
-    img: card2,
-    title: "Sta accadendo ora !! 🏂 ⛷️",
-    text: "Vieni a divertirti con noi di Gambarie!!",
-  },
-  {
-    img: card3,
-    title: "Programma per Gambarie 📖 📖",
-    text: "Vieni a divertirti con noi di Gambarie!!",
-  },
-  {
-    img: card6,
-    title: "Programma per Gambarie 📖 📖",
-    text: " 21, 22, 23, 24 Febbraio.",
-  },
-  {
-    img: card7,
-    title: "Ginnastica Ritmica 🩰",
-    text: "Vieni e unisciti a noi !!",
-  },
-  {
-    img: card9,
-    title: "Promo Twirling 🩰 🩰",
-    text: "Vieni e unisciti a noi !!",
-  },
-  {
-    img: card8,
-    title: "Le 𝗣𝗜𝗚𝗜𝗘𝗦𝗦𝗜𝗔𝗗𝗜 𝟮𝟬𝟮𝟯 si svolgeranno a Ragusa",
-    text: "- Athena resort 🏨 🏨",
-  },
-  {
-    img: card5,
-    title: "Corso Aggiornamento Allenatore PGS ⚽ ⚽",
-    text: "Vieni e unisciti a noi !!",
-  },
-  {
-    img: card4,
-    title: "Guarda questo 👀 👀",
-    text: "..............",
-  },
+const events = [
+  { label: "Sci", img: event1 },
+  { label: "Basket", img: event2 },
+  { label: "Pallavolo", img: event3 },
+  { label: "Calcio a cinque", img: event4 },
 ];
+
+// const cards = [
+//   {
+//     img: card2,
+//     title: "Sta accadendo ora !! 🏂 ⛷️",
+//     text: "Vieni a divertirti con noi di Gambarie!!",
+//   },
+//   {
+//     img: card3,
+//     title: "Programma per Gambarie 📖 📖",
+//     text: "Vieni a divertirti con noi di Gambarie!!",
+//   },
+//   {
+//     img: card6,
+//     title: "Programma per Gambarie 📖 📖",
+//     text: " 21, 22, 23, 24 Febbraio.",
+//   },
+//   {
+//     img: card7,
+//     title: "Ginnastica Ritmica 🩰",
+//     text: "Vieni e unisciti a noi !!",
+//   },
+//   {
+//     img: card9,
+//     title: "Promo Twirling 🩰 🩰",
+//     text: "Vieni e unisciti a noi !!",
+//   },
+//   {
+//     img: card8,
+//     title: "Le 𝗣𝗜𝗚𝗜𝗘𝗦𝗦𝗜𝗔𝗗𝗜 𝟮𝟬𝟮𝟯 si svolgeranno a Ragusa",
+//     text: "- Athena resort 🏨 🏨",
+//   },
+//   {
+//     img: card5,
+//     title: "Corso Aggiornamento Allenatore PGS ⚽ ⚽",
+//     text: "Vieni e unisciti a noi !!",
+//   },
+//   {
+//     img: card4,
+//     title: "Guarda questo 👀 👀",
+//     text: "..............",
+//   },
+// ];
 const Feed = React.memo((props) => {
   React.useEffect(() => {
     const script = document.createElement("script");
@@ -109,11 +121,11 @@ const Home = () => {
   return (
     <div>
       <div>
-      <div className=" flex absolute inset-x-0 bottom-1/2 top-1/2 justify-center items-center text-9xl font-semibold tracking-wider ">
-        PGS PALERMO
+        <div className=" flex absolute inset-x-0 bottom-1/2 top-1/2 justify-center items-center text-9xl font-semibold tracking-wider ">
+          PGS PALERMO
         </div>
         <div className=" flex absolute inset-x-0 bottom-1/2 top-2/3	 justify-center items-center text-3xl font-semibold tracking-wider ">
-        Per saperne di più
+          Per saperne di più
         </div>
         <div className="arrow pt-20">
           <span></span>
@@ -122,22 +134,19 @@ const Home = () => {
         </div>
         <video
           src={front}
-          className=" w-auto min-w-full max-w-none "
+          className=" w-auto min-w-full "
           autoPlay
           loop
           muted
         />
-
-
-
       </div>
 
-      <div className="container py-20">
+      <div className=" w-auto min-w-full max-w-none pt-40">
         <h2 className="pt-20 pb-20  text-5xl text-center ">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
-        <div className="grid grid-cols-8 gap-4 pb-20 ml-8">
+        <div className="grid grid-cols-8 gap-4 pb-80 ">
           {activities.map((activity) => (
             <div key={activity.img}>
               <img src={activity.img} alt="card2" className="rounded-full" />
@@ -145,8 +154,22 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className=" w-auto min-w-full bg-current pt-40  ">
+        <h2 className="pt-20 pb-20 text-6xl text-center text-black ">
+          Presto in arrivo.....
+        </h2>
 
-        <Feed />
+        <div className="grid grid-cols-4 gap-8 pb-80 ml-8 ">
+          {events.map((events) => (
+            <div key={events.img}>
+              <img src={events.img} alt="card2" className="" />
+              <div className="text-center text-xl mt-2 text-black">
+                {events.label}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
