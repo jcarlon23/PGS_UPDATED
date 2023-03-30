@@ -1,5 +1,5 @@
 import "./Home.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { Cards, Intro, Video } from "../../components";
 import front from "./PGS_Palermo.mp4";
 
@@ -29,10 +29,9 @@ const activities = [
 ];
 
 const events = [
-  { label: "Sci", img: event1 },
-  { label: "Basket", img: event2 },
-  { label: "Pallavolo", img: event3 },
-  { label: "Calcio a cinque", img: event4 },
+  { img: event2 },
+  { img: event3 },
+  { img: event4 },
 ];
 
 // const cards = [
@@ -94,7 +93,7 @@ const Feed = React.memo((props) => {
 
   return (
     <React.Fragment>
-      <div id="fb-root "></div>
+
 
       <div
         className="fb-page"
@@ -118,6 +117,12 @@ const Feed = React.memo((props) => {
   );
 });
 const Home = () => {
+  useEffect(() => {
+    const iframeData = document.getElementById("iframeId");
+    const lat = 38.1434359;
+    const lon = 13.3437342;
+    iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
+  });
   return (
     <div>
       <div>
@@ -141,8 +146,8 @@ const Home = () => {
         />
       </div>
 
-      <div className=" w-auto min-w-full max-w-none pt-40">
-        <h2 className="pt-20 pb-20  text-5xl text-center ">
+      <div className=" w-auto min-w-full max-w-none pt-20">
+        <h2 className="pt-20 pb-60  text-5xl text-center ">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
@@ -155,22 +160,33 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className=" w-auto min-w-full bg-current pt-40  ">
-        <h2 className="pt-20 pb-20 text-6xl text-center text-black ">
-          Presto in arrivo.....
+      <div className=" w-auto min-w-full pt-10 bg-gray-700 ">
+        <h2 className="pt-2 pl-10 pb-20 text-3xl text-left text-white font-semibold ">
+          Presto in arrivo
         </h2>
 
-        <div className="grid grid-cols-4 gap-8 pb-80 ml-8 ">
+        <div className="grid grid-cols-5 gap-8 pb-40 ml-8 ">
+        <Feed/>
           {events.map((events) => (
             <div key={events.img}>
-              <img src={events.img} alt="card2" className="" />
-              <div className="text-center text-xl mt-2 text-black">
+              <img src={events.img} alt="card2" className=" h-full w-80 rounded " />
+              <div className="text-center text-xl mt-2 text-black font-semibold">
                 {events.label}
               </div>
             </div>
           ))}
         </div>
-      </div>
+        </div>
+        <div className=" w-auto min-w-full max-w-none  ">
+          <h2 className="pt-10 pb-5 text-4xl text-center text-white ">
+            Sede centrale: Viale Libertà, 199 - (90100) Palermo
+            <div className="pt-10">
+            <iframe id="iframeId" height="600px" width="100%"></iframe>
+          </div>
+          </h2>
+
+        </div>
+
     </div>
   );
 };
