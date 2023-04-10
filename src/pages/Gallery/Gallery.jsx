@@ -44,7 +44,7 @@ const Gallery = () => {
       <h1 className="text-center text-7xl mb-4 mt-20 tracking-widest ">
         GALLERIA
       </h1>
-      <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
+      <div className=" grid grid-cols-4 gap-8 pt-40 ">
         <ImageViewer>
           <div className="card1">
             <img src={Gallery1} alt="" />
@@ -128,7 +128,7 @@ const Gallery = () => {
       </div> */}
 
       <div className="container">
-        <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
+        <div className=" grid grid-cols-4 gap-8 pt-40 ">
           <ImageViewer>
             <div className="card12">
               <img src={Citta2} alt="" />
@@ -191,7 +191,7 @@ const Gallery = () => {
       </h1>
 
       <div className="container">
-        <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
+        <div className=" grid grid-cols-4 gap-8 pt-40 ">
           <ImageViewer>
             <div className="card21">
               <img src={Bosco1} alt="" />
