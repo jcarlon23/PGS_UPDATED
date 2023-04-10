@@ -38,116 +38,74 @@ import Bosco9 from "./Bosco9.png";
 import foot from "./foot.png";
 import { ImageViewer } from "react-image-viewer-dv";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Gallery = () => {
-  useEffect(() => {
-    gsap.to(".footprint", {
-      opacity: 1,
-      stagger: 0.1,
-      scrollTrigger: {
-        start: 0,
-        end: "max",
-        scrub: 1,
-      },
-    });
-  });
-
   return (
-    <div className="image-gallery">
-      <div className="photo">
+    <div className="container">
+      <h1 className="text-center text-7xl mb-4 mt-20 tracking-widest ">
+        GALLERIA
+      </h1>
+      <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
         <ImageViewer>
           <div className="card1">
-            <img src={Gallery1} height={120} width={120} alt="" />
+            <img src={Gallery1} alt="" />
             <div className="caption">Foto di gruppo</div>
           </div>
         </ImageViewer>
-      </div>
-      <div className="photo">
-        <div className="card2">
-          <ImageViewer>
-            <img src={Gallery2} height={120} width={120} alt="" />
+
+        <ImageViewer>
+          <div className="card2">
+            <img src={Gallery2} alt="" />
             <div className="caption">Pronto per sciare</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card3">
-          <ImageViewer>
-            <img src={Gallery3} height={120} width={120} alt="" />
-            <div className="caption">Andiamo !!!</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card4">
-          <ImageViewer>
-            <img src={Gallery4} height={120} width={120} alt="" />
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card4">
+            <img src={Gallery4} alt="" />
             <div className="caption">Sorprendente</div>
-          </ImageViewer>
-        </div>
-      </div>
+          </div>
+        </ImageViewer>
 
-      <div>
-        <div className="middle">
-          <ImageViewer>
-            <div className="middle">
-              <img src={Gambarie} height={400} alt="middle" />
-            </div>
-          </ImageViewer>
-        </div>
-      </div>
-
-      <div className="photo">
-        <div className="card5">
-          <ImageViewer>
-            <img src={Gallery5} height={120} width={120} alt="" />
+        <ImageViewer>
+          <div className="card5">
+            <img src={Gallery5} alt="" />
             <div className="caption">@Gambarie</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card6">
-          <ImageViewer>
-            <img src={Gallery6} height={120} width={120} alt="" />
-            <div className="caption">Foto di gruppo</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card7">
-          <ImageViewer>
-            <img src={Gallery7} height={120} width={120} alt="" />
-            <div className="caption">Foto di gruppo</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card8">
-          <ImageViewer>
-            <img src={Gallery8} height={120} width={120} alt="" />
-            <div className="caption">Orario dell'albergo</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card9">
-          <ImageViewer>
-            <img src={Gallery9} height={120} width={120} alt="" />
-            <div className="caption">Tempo di sci</div>
-          </ImageViewer>
-        </div>
-      </div>
-      <div className="photo">
-        <div className="card10">
-          <ImageViewer>
-            <img src={Gallery10} height={120} width={120} alt="" />
-            <div className="caption">Pista da sci</div>
-          </ImageViewer>
-        </div>
-      </div>
+          </div>
+        </ImageViewer>
 
-      <div className="footprint">
+        <ImageViewer>
+          <div className="card6">
+            <img src={Gallery6} alt="" />
+            <div className="caption">Foto di gruppo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card7">
+            <img src={Gallery7} alt="" />
+            <div className="caption">Foto di gruppo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card9">
+            <img src={Gallery9} alt="" />
+            <div className="caption">Tempo di sci</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card10">
+            <img src={Gallery10} alt="" />
+            <div className="caption">Pista da sci</div>
+          </div>
+        </ImageViewer>
+      </div>
+      <h1 className="text-center text-7xl mb-10 mt-20 tracking-widest ">
+      Gambarie D'Aspromonte
+      </h1>
+
+      {/* <div className="footprint">
         <img src={foot} className="a footprint" alt="footprint" />
         <img src={foot} className="b footprint" alt="footprint" />
         <img src={foot} className="c footprint" alt="footprint" />
@@ -167,170 +125,131 @@ const Gallery = () => {
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-      </div>
+      </div> */}
 
-      <div className="image-gallery2">
-        <div className="photo">
-          <div className="card12">
-            <ImageViewer>
-              <img src={Citta2} height={120} width={120} alt="" />
-              <div className="caption">Tempo di calcio !</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card13">
-            <ImageViewer>
-              <img src={Citta3} height={120} width={120} alt="" />
-              <div className="caption">Teatro</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card14">
-            <ImageViewer>
-              <img src={Citta4} height={120} width={120} alt="" />
-              <div className="caption">Tempo di pallavolo</div>
-            </ImageViewer>
-          </div>
-        </div>
-
-        <div>
-          <div className="Golfo">
-            <ImageViewer>
-              <div className="Golfo">
-                <img src={Golfo} height={400} alt="Golfo" />
-              </div>
-            </ImageViewer>
-          </div>
-        </div>
-
-        <div className="photo">
-          <div className="card15">
-            <ImageViewer>
-              <img src={Citta5} height={120} width={120} alt="" />
-              <div className="caption">Teatro</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card16">
-            <ImageViewer>
-              <img src={Citta6} height={120} width={120} alt="" />
-              <div className="caption">Tempo di basket</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card18">
-            <ImageViewer>
-              <img src={Citta7} height={120} width={120} alt="" />
-              <div className="caption">Pallavolo pronto!</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card19">
-            <ImageViewer>
-              <img src={Citta8} height={120} width={120} alt="" />
-              <div className="caption">Foto di gruppo</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card20">
-            <ImageViewer>
-              <img src={Citta1} height={120} width={120} alt="" />
-              <div className="caption">Tempo rilassante</div>
-            </ImageViewer>
-          </div>
-        </div>
-      </div>
-
-      <div className="image-gallery3">
-        <div className="photo">
+      <div className="container">
+        <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
           <ImageViewer>
-            <div className="card21">
-              <img src={Bosco1} height={120} width={120} alt="" />
-              <div className="caption">Scacchi!!</div>
+            <div className="card12">
+              <img src={Citta2} alt="" />
+              <div className="caption">Tempo di calcio !</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card13">
+              <img src={Citta3} alt="" />
+              <div className="caption">Teatro</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card14">
+              <img src={Citta4} alt="" />
+              <div className="caption">Tempo di pallavolo</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card15">
+              <img src={Citta5} alt="" />
+              <div className="caption">Teatro</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card16">
+              <img src={Citta6} alt="" />
+              <div className="caption">Tempo di basket</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card18">
+              <img src={Citta7} alt="" />
+              <div className="caption">Pallavolo pronto!</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card19">
+              <img src={Citta8} alt="" />
+              <div className="caption">Foto di gruppo</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card20">
+              <img src={Citta1} alt="" />
+              <div className="caption">Tempo rilassante</div>
             </div>
           </ImageViewer>
         </div>
-        <div className="photo">
-          <div className="card22">
-            <ImageViewer>
-              <img src={Bosco2} height={120} width={120} alt="" />
+      </div>
+      <h1 className="text-center text-7xl mb-10 mt-20 tracking-widest ">
+        Città del Mare-Perla Del Golfo
+      </h1>
+
+      <div className="container">
+        <div className=" grid grid-cols-4 gap-8 pt-40 w-full h-full ">
+          <ImageViewer>
+            <div className="card21">
+              <img src={Bosco1} alt="" />
+              <div className="caption">Scacchi!!</div>
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card22">
+              <img src={Bosco2} alt="" />
               <div className="caption">Tempo di basket</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card23">
-            <ImageViewer>
-              <img src={Bosco3} height={120} width={120} alt="" />
-              <div className="caption">Tutti sono qui</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card24">
-            <ImageViewer>
-              <img src={Bosco4} height={120} width={120} alt="" />
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card24">
+              <img src={Bosco4} alt="" />
               <div className="caption">Scherma!!!</div>
-            </ImageViewer>
-          </div>
-        </div>
+            </div>
+          </ImageViewer>
 
-        <div>
-          <div className="School">
-            <ImageViewer>
-              <div className="School">
-                <video src={School} autoPlay loop muted />
-              </div>
-            </ImageViewer>
-          </div>
-        </div>
-
-        <div className="photo">
-          <div className="card25">
-            <ImageViewer>
-              <img src={Bosco5} height={120} width={120} alt="" />
+          <ImageViewer>
+            <div className="card25">
+              <img src={Bosco5} alt="" />
               <div className="caption">Calcio !!</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card26">
-            <ImageViewer>
-              <img src={Bosco6} height={120} width={120} alt="" />
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card26">
+              <img src={Bosco6} alt="" />
               <div className="caption">Medaglie!!</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card27">
-            <ImageViewer>
-              <img src={Bosco7} height={120} width={120} alt="" />
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card27">
+              <img src={Bosco7} alt="" />
               <div className="caption">Chiesa</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card28">
-            <ImageViewer>
-              <img src={Bosco8} height={120} width={120} alt="" />
+            </div>
+          </ImageViewer>
+          <ImageViewer>
+            <div className="card28">
+              <img src={Bosco8} alt="" />
               <div className="caption">Pallavolo</div>
-            </ImageViewer>
-          </div>
-        </div>
-        <div className="photo">
-          <div className="card29">
-            <ImageViewer>
-              <img src={Bosco9} height={120} width={120} alt="" />
+            </div>
+          </ImageViewer>
+
+          <ImageViewer>
+            <div className="card29">
+              <img src={Bosco9} alt="" />
               <div className="caption">Chiesa</div>
-            </ImageViewer>
-          </div>
+            </div>
+          </ImageViewer>
         </div>
+        <h1 className="text-center text-7xl mb-20 mt-20 tracking-widest ">
+        Istituto Salesiano Don Bosco Villa Ranchibile
+        </h1>
       </div>
     </div>
   );

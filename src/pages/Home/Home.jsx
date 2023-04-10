@@ -12,10 +12,11 @@ import card8 from "../../assets/cards/PGS7.png";
 import card6 from "../../assets/cards/PGS8.png";
 import card4 from "../../assets/cards/PGS9.png";
 
-import event1 from "../../assets/cards/event1.png";
+import event1 from "../../assets/cards/event6.png";
 import event2 from "../../assets/cards/event2.png";
 import event3 from "../../assets/cards/event3.png";
 import event4 from "../../assets/cards/event4.png";
+import event5 from "../../assets/cards/event5.png";
 
 const activities = [
   { label: "Sci", img: card2 },
@@ -29,9 +30,11 @@ const activities = [
 ];
 
 const events = [
+  { img: event1 },
   { img: event2 },
   { img: event3 },
   { img: event4 },
+  { img: event5 },
 ];
 
 // const cards = [
@@ -76,46 +79,44 @@ const events = [
 //     text: "..............",
 //   },
 // ];
-const Feed = React.memo((props) => {
-  React.useEffect(() => {
-    const script = document.createElement("script");
+// const Feed = React.memo((props) => {
+//   React.useEffect(() => {
+//     const script = document.createElement("script");
 
-    script.src =
-      "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=your-app-id&autoLogAppEvents=1";
-    script.async = true;
+//     script.src =
+//       "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=your-app-id&autoLogAppEvents=1";
+//     script.async = true;
 
-    document.body.appendChild(script);
+//     document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+//     return () => {
+//       document.body.removeChild(script);
+//     };
+//   }, []);
 
-  return (
-    <React.Fragment>
-
-
-      <div
-        className="fb-page"
-        data-href="https://www.facebook.com/pgs.palermo.5"
-        data-show-posts="true"
-        data-width="500px"
-        data-height="500px"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true"
-      >
-        <blockquote
-          cite="https://www.facebook.com/pgs.palermo.5"
-          className="fb-xfbml-parse-ignore"
-        >
-          <a href="https://www.facebook.com/pgs.palermo.5">Your Page</a>
-        </blockquote>
-      </div>
-    </React.Fragment>
-  );
-});
+//   return (
+//     <React.Fragment>
+//       <div
+//         className="fb-page"
+//         data-href="https://www.facebook.com/pgs.palermo.5"
+//         data-show-posts="true"
+//         data-width="500px"
+//         data-height="500px"
+//         data-small-header="false"
+//         data-adapt-container-width="true"
+//         data-hide-cover="false"
+//         data-show-facepile="true"
+//       >
+//         <blockquote
+//           cite="https://www.facebook.com/pgs.palermo.5"
+//           className="fb-xfbml-parse-ignore"
+//         >
+//           <a href="https://www.facebook.com/pgs.palermo.5">Your Page</a>
+//         </blockquote>
+//       </div>
+//     </React.Fragment>
+//   );
+// });
 const Home = () => {
   useEffect(() => {
     const iframeData = document.getElementById("iframeId");
@@ -166,27 +167,29 @@ const Home = () => {
         </h2>
 
         <div className="grid grid-cols-5 gap-8 pb-40 ml-8 ">
-        <Feed/>
           {events.map((events) => (
             <div key={events.img}>
-              <img src={events.img} alt="card2" className=" h-full w-80 rounded " />
+              <img
+                src={events.img}
+                alt="card2"
+                className=" h-full w-80 rounded "
+              />
               <div className="text-center text-xl mt-2 text-black font-semibold">
                 {events.label}
               </div>
             </div>
           ))}
         </div>
-        </div>
-        <div className=" w-auto min-w-full max-w-none  ">
-          <h2 className="pt-10 pb-5 text-4xl text-center text-white ">
-            Sede centrale: Viale Libertà, 199 - (90100) Palermo
-            <div className="pt-10">
+        {/* <Feed /> */}
+      </div>
+      <div className=" w-auto min-w-full max-w-none  ">
+        <h2 className="pt-10 pb-5 text-4xl text-center text-white ">
+          Sede centrale: Viale Libertà, 199 - (90100) Palermo
+          <div className="pt-10">
             <iframe id="iframeId" height="600px" width="100%"></iframe>
           </div>
-          </h2>
-
-        </div>
-
+        </h2>
+      </div>
     </div>
   );
 };
