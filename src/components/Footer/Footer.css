@@ -5,10 +5,11 @@ body {
 
 .copywright {
   margin-top: 12px;
+
 }
 
 ._14 {
-  margin-top: 16px;
+  margin-top: 22px;
   font-size: 22px;
   font-family: sans-serif;
 }
@@ -28,7 +29,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 100%;
-  font-size: 22px;
+  font-size: 29px;
   font-family: sans-serif;
 }
 
@@ -63,6 +64,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 5%;
 }
 
 @media screen and (max-height: 300px) {

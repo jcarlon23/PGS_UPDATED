@@ -18,7 +18,7 @@ const Footer = () => {
             <p>&copy; Copywright by James's web pages</p>
           </Link>
         </div>
-        <h4 className="_14">Follow us on: </h4>
+        <h4 className="_14">Seguici su: </h4>
         <div className="facebook">
           <Link to="https://www.facebook.com/pgs.palermo.5">
             <FontAwesomeIcon icon={faFacebook} />
