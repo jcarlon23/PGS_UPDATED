@@ -125,29 +125,29 @@ const Home = () => {
     iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
   });
   return (
-    <div>
+    <div >
       <div>
-        <div className=" flex absolute inset-x-0 bottom-1/2 top-1/2 justify-center items-center text-9xl font-semibold tracking-wider ">
+        <div className="flex absolute inset-x-0 bottom-1/2 md:bottom-1/2 md:top-1/4 justify-center md:justify-center items-center text-9xl  sm:text-5xl md:text-7xl lg:text-9xl font-semibold tracking-wider text-center w-100 md:w-100 lg:w-100 ">
           PGS PALERMO
         </div>
-        <div className=" flex absolute inset-x-0 bottom-1/2 top-2/3	 justify-center items-center text-3xl font-semibold tracking-wider ">
+        <div className=" flex absolute inset-x-0 lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center items-center lg:text-3xl md:text-1xl sm:text-lg font-semibold tracking-wider ">
           Per saperne di più
         </div>
-        <div className="arrow pt-20">
+        <div className="arrow pt-20 md:top-3/4">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <video
           src={front}
-          className=" w-auto min-w-full "
+          className="w-auto min-w-full "
           autoPlay
           loop
           muted
         />
       </div>
 
-      <div className=" w-auto min-w-full max-w-none pt-20">
+      <div className=" w-auto min-w-full max-w-none pt-20 md:pt-60">
         <h2 className="pt-20 pb-60  text-5xl text-center ">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
