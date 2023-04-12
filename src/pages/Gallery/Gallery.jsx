@@ -62,7 +62,7 @@ const Gallery = () => {
         <ImageViewer>
           <div className="card4">
             <img src={Gallery4} alt="" />
-            <div className="caption">Sorprendente</div>
+            <div className="caption">Lezione</div>
           </div>
         </ImageViewer>
 
@@ -97,7 +97,7 @@ const Gallery = () => {
         <ImageViewer>
           <div className="card10">
             <img src={Gallery10} alt="" />
-            <div className="caption">Pista da sci</div>
+            <div className="caption">Pupazzo di neve</div>
           </div>
         </ImageViewer>
       </div>
@@ -132,35 +132,35 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card12">
               <img src={Citta2} alt="" />
-              <div className="caption">Tempo di calcio !</div>
+              <div className="caption">Tempo di basket</div>
             </div>
           </ImageViewer>
 
           <ImageViewer>
             <div className="card13">
               <img src={Citta3} alt="" />
-              <div className="caption">Teatro</div>
+              <div className="caption">Tempo di pallavolo</div>
             </div>
           </ImageViewer>
 
           <ImageViewer>
             <div className="card14">
               <img src={Citta4} alt="" />
-              <div className="caption">Tempo di pallavolo</div>
+              <div className="caption">Calcio !</div>
             </div>
           </ImageViewer>
 
           <ImageViewer>
             <div className="card15">
               <img src={Citta5} alt="" />
-              <div className="caption">Teatro</div>
+              <div className="caption">Tempo di basket</div>
             </div>
           </ImageViewer>
 
           <ImageViewer>
             <div className="card16">
               <img src={Citta6} alt="" />
-              <div className="caption">Tempo di basket</div>
+              <div className="caption">Teatro</div>
             </div>
           </ImageViewer>
 
@@ -174,14 +174,14 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card19">
               <img src={Citta8} alt="" />
-              <div className="caption">Foto di gruppo</div>
+              <div className="caption">Scivolo da piscina</div>
             </div>
           </ImageViewer>
 
           <ImageViewer>
             <div className="card20">
               <img src={Citta1} alt="" />
-              <div className="caption">Tempo rilassante</div>
+              <div className="caption">Calcio !</div>
             </div>
           </ImageViewer>
         </div>
