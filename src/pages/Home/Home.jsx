@@ -127,13 +127,19 @@ const Home = () => {
   return (
     <div >
       <div>
-        <div className="flex absolute inset-x-0 bottom-1/2 md:bottom-1/2 md:top-1/4 justify-center md:justify-center items-center text-9xl  sm:text-5xl md:text-7xl lg:text-9xl font-semibold tracking-wider text-center w-100 md:w-100 lg:w-100 ">
+        <div className="flex md:absolute py-10 inset-x-0 bottom-1/2 md:bottom-1/2 md:top-1/4
+        justify-center md:justify-center items-center
+        text-5xl md:text-7xl lg:text-9xl font-semibold tracking-wider
+      ">
           PGS PALERMO
         </div>
-        <div className=" flex absolute inset-x-0 lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center items-center lg:text-3xl md:text-1xl sm:text-lg font-semibold tracking-wider ">
+
+        <div className="flex absolute left-1/2
+        lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center
+        lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden md:block	">
           Per saperne di più
         </div>
-        <div className="arrow pt-20 md:top-3/4">
+        <div className="arrow pt-20 md:top-3/4 hidden md:block ">
           <span></span>
           <span></span>
           <span></span>
@@ -147,43 +153,41 @@ const Home = () => {
         />
       </div>
 
-      <div className=" w-auto min-w-full max-w-none pt-20 md:pt-60">
-        <h2 className="pt-20 pb-60  text-5xl text-center ">
+      <div className=" w-auto min-w-full max-w-none ">
+        <h2 className="md:pt-60 md:pb-60 py-10 lg:text-5xl text-2xl text-center ">
           Coordiniamo le attività sportive da sempre promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
-        <div className="grid grid-cols-8 gap-4 pb-80 ">
+        <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 ">
           {activities.map((activity) => (
-            <div key={activity.img}>
-              <img src={activity.img} alt="card2" className="rounded-full" />
+            <div className="flex justify-center flex-col" key={activity.img}>
+              <img src={activity.img} alt="card2" className="rounded-full  md:w-full " />
               <div className="text-center text-xl mt-2">{activity.label}</div>
             </div>
           ))}
         </div>
       </div>
-      <div className=" w-auto min-w-full pt-10 bg-gray-700 ">
-        <h2 className="pt-2 pl-10 pb-20 text-3xl text-left text-white font-semibold ">
+      <div className=" w-auto min-w-full lg:pt-10 bg-gray-700 ">
+        <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
           Presto in arrivo
         </h2>
 
-        <div className="grid grid-cols-5 gap-8 pb-40 ml-8 ">
+        <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">
           {events.map((events) => (
-            <div key={events.img}>
+            <div className="flex justify-center" key={events.img}>
               <img
                 src={events.img}
                 alt="card2"
                 className=" h-full w-80 rounded "
               />
-              <div className="text-center text-xl mt-2 text-black font-semibold">
-                {events.label}
-              </div>
+
             </div>
           ))}
         </div>
         {/* <Feed /> */}
       </div>
       <div className=" w-auto min-w-full max-w-none  ">
-        <h2 className="pt-10 pb-5 text-4xl text-center text-white ">
+        <h2 className="pt-10 pb-5 md:text-4xl text-center text-white ">
           Sede centrale: Viale Libertà, 199 - (90100) Palermo
           <div className="pt-10">
             <iframe id="iframeId" height="600px" width="100%"></iframe>
