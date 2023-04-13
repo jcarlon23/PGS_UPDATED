@@ -44,7 +44,7 @@ const Gallery = () => {
       <h1 className="text-center text-2xl md:text-7xl md:mb-4 md:mt-20 mt-10 tracking-widest">
         GALLERIA
       </h1>
-      <div className=" grid grid-cols-2 md:grid-cols-4 gap-8 md:pt-40 pt-10 md:grid-cols-4 md:gap-4  ">
+      <div className=" grid grid-cols-2 md:grid-cols-4 gap-8 md:pt-40 pt-10 md:grid-cols-4 md:gap-4 md:text-3xl  ">
         <ImageViewer>
           <div className="card1 ">
             <img src={Gallery1} alt="" />
@@ -101,7 +101,7 @@ const Gallery = () => {
           </div>
         </ImageViewer>
       </div>
-      <h1 className="text-center text-2xl mt-10 md:text-7xl md:mb-10 md:mt-20 tracking-widest ">
+      <h1 className="text-center text-2xl mt-10 md:text-7xl  md:mb-10 md:mt-20 tracking-widest ">
       Gambarie D'Aspromonte
       </h1>
 
@@ -128,7 +128,7 @@ const Gallery = () => {
       </div> */}
 
       <div className="container">
-        <div className=" grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40  ">
+        <div className=" grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40 md:text-3xl   ">
           <ImageViewer>
             <div className="card12">
               <img src={Citta2} alt="" />
@@ -191,7 +191,7 @@ const Gallery = () => {
       </h1>
 
       <div className="container">
-        <div className=" grid grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40 ">
+        <div className=" grid grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40 md:text-3xl  ">
           <ImageViewer>
             <div className="card21">
               <img src={Bosco1} alt="" />
