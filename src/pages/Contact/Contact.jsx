@@ -79,7 +79,7 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <div className=" w-auto min-w-full max-w-none  ">
+      <div className=" w-auto min-w-full max-w-none ">
         <h2 className="pt-20 pb-5 text-4xl text-center text-white ">
           Sede centrale: Viale Libertà, 199 - (90100) Palermo
         </h2>

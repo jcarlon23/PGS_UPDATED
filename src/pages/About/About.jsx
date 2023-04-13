@@ -53,20 +53,20 @@ const About = () => {
   return (
     <div className="aboutrow pt-1 pb-1 mt-1">
       <div className="container">
-        <h1 className="text-center text-7xl mb-4 mt-20 tracking-widest ">
+        <h1 className="text-center text-4xl md:text-7xl mb-4 mt-20 tracking-widest ">
           CHI SIAMO
         </h1>
-        <div className="About md:grid grid-cols-8 mt-20 gap-8 ">
+        <div className="About md:grid grid-cols-8 grid-flow-col justify-stretch mt-20 gap-8 ">
           <div className="col-span-3">
             <div className="">
-              <p className="text-xl mb-4">
+              <p className="text-m md:text-xl mb-4 text-center ">
                 L’Associazione Nazionale "POLISPORTIVE GIOVANILI SALESIANE" già
                 promossa dagli Enti "Centro Nazionale Opere Salesiane CNOS" e
                 "Centro Italiano Opere Femminili Salesiane CIOFS", è costituita
                 con atto del 9 novembre 1967 rep. 36226 presso il dott. Vincenzo
                 Pompili, notaio in Roma.
               </p>
-              <p className="text-xl mb-4">
+              <p className="text-m md:text-xl mb-4 text-center ">
                 L’associazione viene indicata con la sigla "P.G.S.".
                 L’Associazione Nazionale "PGS" è stata riconosciuta Ente di
                 Promozione Sportiva la prima volta con delibera del CONI n. 117
@@ -74,7 +74,7 @@ const About = () => {
                 e, successivamente, con delibere del 27 febbraio 2002 e del 18
                 dicembre 2008.
               </p>
-              <p className="text-xl mb-4">
+              <p className=" text-m md:text-xl mb-4 text-center ">
                 È riconosciuta Ente Nazionale a carattere assistenziale con i
                 Decreti del Ministero dell’Interno n. 10.6255/12000.A (78) del
                 22 febbraio 1984 e n. 10.14116/12000.A (78) del 17 ottobre 1984
@@ -85,7 +85,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img src={about} alt="" className="col-span-5" />
+          <img src={about} alt="" className="col-span-5 mb-10" />
         </div>
       </div>
     </div>
