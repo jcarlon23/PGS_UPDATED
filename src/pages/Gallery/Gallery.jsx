@@ -139,7 +139,7 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card13">
               <img src={Citta3} alt="" />
-              <div className="caption">Tempo di pallavolo</div>
+              <div className="caption">Pallavolo</div>
             </div>
           </ImageViewer>
 
@@ -167,7 +167,7 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card18">
               <img src={Citta7} alt="" />
-              <div className="caption">Pallavolo pronto!</div>
+              <div className="caption">Pallavolo</div>
             </div>
           </ImageViewer>
 
@@ -191,7 +191,7 @@ const Gallery = () => {
       </h1>
 
       <div className="container">
-        <div className=" grid grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40 md:text-3xl  ">
+        <div className=" grid grid grid-cols-2 pt-10 md:grid-cols-4 gap-8 md:pt-40 sm:text-1xl md:text-1xl lg:text-3xl  ">
           <ImageViewer>
             <div className="card21">
               <img src={Bosco1} alt="" />
