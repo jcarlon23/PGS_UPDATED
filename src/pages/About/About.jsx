@@ -56,10 +56,10 @@ const About = () => {
         <h1 className="text-center text-4xl md:text-7xl mb-4 mt-20 tracking-widest ">
           CHI SIAMO
         </h1>
-        <div className="About md:grid grid-cols-8 grid-flow-col justify-stretch mt-20 gap-8 ">
+        <div className="About lg:grid grid-cols-8 grid-flow-col justify-stretch mt-20 gap-8 ">
           <div className="col-span-3">
             <div className="">
-              <p className="text-m md:text-xl mb-4 text-center ">
+              <p className="text-m lg:text-xl mb-4 text-center ">
                 L’Associazione Nazionale "POLISPORTIVE GIOVANILI SALESIANE" già
                 promossa dagli Enti "Centro Nazionale Opere Salesiane CNOS" e
                 "Centro Italiano Opere Femminili Salesiane CIOFS", è costituita

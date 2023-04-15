@@ -3,17 +3,17 @@ body {
   color: white;
 }
 
-.copywright {
+/* .copywright {
   margin-top: 12px;
 
-}
+} */
 
-._14 {
+/* ._14 {
   margin-top: 22px;
   font-size: 22px;
   font-family: sans-serif;
-}
-.facebook {
+} */
+/* .facebook {
   margin-top: 13px;
 }
 
@@ -23,15 +23,15 @@ body {
 
 .youtube {
   margin-top: 13px;
-}
+} */
 
-.social-media-icons-white a {
+/* .social-media-icons-white a {
   color: white;
   text-decoration: none;
   border-radius: 100%;
   font-size: 29px;
   font-family: sans-serif;
-}
+} */
 
 .facebook a:hover {
   opacity: 1;
@@ -39,6 +39,8 @@ body {
 }
 
 .instagram a:hover {
+  color: white;
+  border-radius: 100%;
   opacity: 1;
   background: #d6249f;
   background: radial-gradient(
@@ -53,6 +55,8 @@ body {
 }
 
 .youtube a:hover {
+  color: white;
+  border-radius: 100%;
   opacity: 1;
   background: rgb(255, 86, 86);
 }
@@ -66,7 +70,7 @@ body {
   width: 100%;
   height: 5%;
 }
-
+/*
 @media screen and (max-height: 300px) {
   ul {
     margin-top: 40px;
@@ -80,11 +84,11 @@ body {
   }
 
   ._14 {
- 
+
     font-size: 9px;
   }
 
   .copywright {
     padding-top: 9px;
   }
-}
+} */
