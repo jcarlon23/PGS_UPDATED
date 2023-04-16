@@ -10,43 +10,42 @@ const Navbar = () => {
   const hideMobileMenu = () => setShowMenuForMobile(false);
 
   return (
-    <div className="header">
-      <div className="container">
-        <nav className="navbar">
-          <Link to="/" className="logo">
-            <img src={logo} alt="PGS Palermo logo" />
-          </Link>
-          <div className="hamburger" onClick={showMobileMenu}>
-            {showMenuForMobile ? (
-              <FaTimes size={30} style={{ color: "#ffffff" }} />
-            ) : (
-              <FaBars size={30} style={{ color: "#ffffff" }} />
-            )}
-          </div>
-          <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8 ">
-              <Link to="/" onClick={hideMobileMenu}>
-                HOME
-              </Link>
-            </li>
-            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
-              <Link to="About" onClick={hideMobileMenu}>
-                CHI SIAMO
-              </Link>
-            </li>
-            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
-              <Link to="Gallery " onClick={hideMobileMenu}>
-                GALLERIA
-              </Link>
-            </li>
-            <li className="nav-item px-3 py-2 text-m font-medium text-black hover:underline underline-offset-8">
-              <Link to="ContactUs" onClick={hideMobileMenu}>
-                CONTATTACI
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div className="header ">
+      <nav className="navbar">
+        <Link to="/" className="logo mb-2 md:ml-10 ">
+          <img src={logo} alt="PGS Palermo logo" />
+        </Link>
+        {/* <div className="hamburger" onClick={showMobileMenu}>
+          {showMenuForMobile ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
+        </div> */}
+
+        <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"} >
+          <li className="nav-item px-4 lg:px-3 py-2  text-xs md:text-lg md:font-medium text-black hover:underline underline-offset-8 ">
+            <Link to="/" onClick={hideMobileMenu}>
+              HOME
+            </Link>
+          </li>
+          <li className="nav-item px-4 lg:px-3 py-2 text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
+            <Link to="About" onClick={hideMobileMenu}>
+              CHI SIAMO
+            </Link>
+          </li>
+          <li className="nav-item px-3 lg:px-3 py-2 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
+            <Link to="Gallery " onClick={hideMobileMenu}>
+              GALLERIA
+            </Link>
+          </li>
+          <li className="nav-item px-2  lg:px-3 py-2 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 md:mr-10">
+            <Link to="ContactUs" onClick={hideMobileMenu}>
+              CONTATTACI
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

@@ -127,9 +127,9 @@ const Home = () => {
   return (
     <div >
       <div>
-        <div className="flex absolute py-20 pl-10 md:absolute md:py-60 md:pl-50 md:inset-x-0
+        <div className="flex pl-20 absolute py-20 pl-10 md:absolute md:py-60 md:pl-50 md:inset-x-0
         justify-center lg:justify-center items-center
-        text-5xl md:text-7xl lg:text-9xl font-semibold tracking-wider
+        text-4xl md:text-7xl lg:text-9xl font-semibold tracking-wider
       ">
           PGS PALERMO
         </div>
@@ -161,8 +161,8 @@ const Home = () => {
         <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 ">
           {activities.map((activity) => (
             <div className="flex justify-center flex-col" key={activity.img}>
-              <img src={activity.img} alt="card2" className="rounded-full  md:w-full " />
-              <div className="text-center text-xl mt-2">{activity.label}</div>
+              <img src={activity.img} alt="card2" className="rounded-full  md:w-full w-40 " />
+              <div className="text-center pr-4 md:text-xl mt-2">{activity.label}</div>
             </div>
           ))}
         </div>
