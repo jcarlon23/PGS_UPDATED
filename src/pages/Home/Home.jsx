@@ -127,7 +127,7 @@ const Home = () => {
   return (
     <div >
       <div>
-        <div className="flex pl-20 absolute py-20 pl-10 md:absolute md:py-60 md:pl-50 md:inset-x-0
+        <div className="flex pl-10 absolute py-20 pl-10 md:absolute md:py-60 md:pl-50 md:inset-x-0
         justify-center lg:justify-center items-center
         text-4xl md:text-7xl lg:text-9xl font-semibold tracking-wider
       ">
