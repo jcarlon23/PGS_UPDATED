@@ -125,18 +125,23 @@ const Home = () => {
     iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
   });
   return (
-    <div >
+    <div>
       <div>
-        <div className="flex absolute md:left-1/3 md:top-1/2 bottom-1/2 left-1/3
+        <div
+          className="flex absolute md:left-1/4 md:top-1/2 bottom-1/2 left-1/4
         justify-center lg:justify-center items-center
-        text-1xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
-      ">
+        text-2xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
+      "
+        >
           PGS PALERMO
         </div>
 
-        <div className="flex absolute  md:ml-96
-        lg:bottom-1/2 lg:top-2/3 lg:left-1/4	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
-        lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	">
+        <div
+          className="flex absolute  md:ml-96
+        lg:bottom-1/2 lg:top-2/3 lg:right-1/2
+        	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
+        lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	"
+        >
           Per saperne di più
         </div>
         <div className="arrow md:pt-40 md:top-3/4 hidden lg:block ">
@@ -144,13 +149,7 @@ const Home = () => {
           <span></span>
           <span></span>
         </div>
-        <video
-          src={front}
-          className="w-auto min-w-full "
-          autoPlay
-          loop
-          muted
-        />
+        <video src={front} className="w-auto min-w-full " autoPlay loop muted />
       </div>
 
       <div className=" w-auto min-w-full max-w-none ">
@@ -161,8 +160,14 @@ const Home = () => {
         <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 ">
           {activities.map((activity) => (
             <div className="flex justify-center flex-col" key={activity.img}>
-              <img src={activity.img} alt="card2" className="rounded-full  md:w-full w-40 " />
-              <div className="text-center pr-4 md:text-xl mt-2">{activity.label}</div>
+              <img
+                src={activity.img}
+                alt="card2"
+                className="rounded-full  md:w-full w-40 "
+              />
+              <div className="text-center pr-4 md:text-xl mt-2">
+                {activity.label}
+              </div>
             </div>
           ))}
         </div>
@@ -180,7 +185,6 @@ const Home = () => {
                 alt="card2"
                 className=" h-full w-80 rounded "
               />
-
             </div>
           ))}
         </div>
