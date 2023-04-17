@@ -174,7 +174,7 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card19">
               <img src={Citta8} alt="" />
-              <div className="caption">Scivolo da piscina</div>
+              <div className="caption"> Piscina</div>
             </div>
           </ImageViewer>
 

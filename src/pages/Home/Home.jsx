@@ -129,13 +129,13 @@ const Home = () => {
       <div>
         <div className="flex absolute py-20 px-20 md:absolute md:py-60 md:pl-50 md:inset-x-0
         justify-center lg:justify-center items-center
-        text-3xl md:text-7xl lg:text-9xl font-semibold tracking-wider
+        text-1xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
       ">
           PGS PALERMO
         </div>
 
-        <div className="flex absolute md:left-18rem md:ml-96
-        lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
+        <div className="flex absolute  md:ml-96
+        lg:bottom-1/2 lg:top-2/3 lg:left-1/4	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
         lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	">
           Per saperne di più
         </div>
