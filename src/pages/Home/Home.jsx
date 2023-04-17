@@ -134,7 +134,7 @@ const Home = () => {
           PGS PALERMO
         </div>
 
-        <div className="flex absolute md:left-20rem md:ml-96
+        <div className="flex absolute md:left-18rem md:ml-96
         lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
         lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	">
           Per saperne di più
