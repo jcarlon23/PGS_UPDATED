@@ -130,14 +130,14 @@ const Home = () => {
         <div
           className=" heading1 flex absolute md:absolute  md:left-1/4
         justify-center lg:justify-center items-center
-        text-3xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
+        text-3xl  md:text-7xl lg:text-8xl font-semibold tracking-wider
       "
         >
           PGS PALERMO
         </div>
 
         <div
-          className=" heading2 flex absolute md:absolute  
+          className=" heading2 flex absolute md:absolute
         lg:bottom-1/2 lg:top-2/3
         	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
         lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	"
