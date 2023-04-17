@@ -127,19 +127,19 @@ const Home = () => {
   return (
     <div >
       <div>
-        <div className="flex pl-10 absolute py-20 pl-10 md:absolute md:py-60 md:pl-50 md:inset-x-0
+        <div className="flex absolute py-20 px-20 md:absolute md:py-60 md:pl-50 md:inset-x-0
         justify-center lg:justify-center items-center
-        text-4xl md:text-7xl lg:text-9xl font-semibold tracking-wider
+        text-3xl md:text-7xl lg:text-9xl font-semibold tracking-wider
       ">
           PGS PALERMO
         </div>
 
         <div className="flex absolute md:left-1/4 md:ml-96
-        lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center
-        lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block	">
+        lg:bottom-1/2 lg:top-2/3	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
+        lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	">
           Per saperne di più
         </div>
-        <div className="arrow pt-20 md:top-3/4 hidden lg:block ">
+        <div className="arrow md:pt-40 md:top-3/4 hidden lg:block ">
           <span></span>
           <span></span>
           <span></span>
