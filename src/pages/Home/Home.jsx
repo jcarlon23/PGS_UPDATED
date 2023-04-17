@@ -128,17 +128,17 @@ const Home = () => {
     <div>
       <div>
         <div
-          className="flex absolute md:left-1/4 md:top-1/2 bottom-1/2 left-1/4
+          className=" heading1 flex absolute md:absolute  md:left-1/4 md:top-1/2 sm:top-1/2
         justify-center lg:justify-center items-center
-        text-2xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
+        text-3xl  md:text-7xl lg:text-9xl font-semibold tracking-wider
       "
         >
           PGS PALERMO
         </div>
 
         <div
-          className="flex absolute  md:ml-96
-        lg:bottom-1/2 lg:top-2/3 lg:right-1/2
+          className=" heading2 flex absolute md:absolute  md:ml-96
+        lg:bottom-1/2 lg:top-2/3
         	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
         lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	"
         >

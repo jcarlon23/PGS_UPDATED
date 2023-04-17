@@ -44,6 +44,9 @@ const Gallery = () => {
       <h1 className="text-center text-2xl md:text-7xl md:mb-4 md:mt-20 mt-10 tracking-widest">
         GALLERIA
       </h1>
+      <h1 className="text-center text-2xl mt-10 md:text-7xl  md:mb-10 md:mt-40 tracking-widest ">
+      Gambarie D'Aspromonte
+      </h1>
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-8 lg:pt-40 pt-10 lg:grid-cols-4 lg:gap-4 md:text-3xl  ">
         <ImageViewer>
           <div className="card1 ">
@@ -101,9 +104,7 @@ const Gallery = () => {
           </div>
         </ImageViewer>
       </div>
-      <h1 className="text-center text-2xl mt-10 md:text-7xl  md:mb-10 md:mt-20 tracking-widest ">
-      Gambarie D'Aspromonte
-      </h1>
+
 
       {/* <div className="footprint">
         <img src={foot} className="a footprint" alt="footprint" />
@@ -128,6 +129,9 @@ const Gallery = () => {
       </div> */}
 
       <div className="container">
+      <h1 className="text-center text-2xl pt-20 md:text-7xl md:mb-10 md:mt-40 tracking-widest ">
+        Città del Mare-Perla Del Golfo
+      </h1>
         <div className=" grid grid-cols-2 pt-10 lg:grid-cols-4 gap-8 lg:pt-40 md:text-3xl   ">
           <ImageViewer>
             <div className="card12">
@@ -186,11 +190,12 @@ const Gallery = () => {
           </ImageViewer>
         </div>
       </div>
-      <h1 className="text-center text-2xl pt-10 md:text-7xl md:mb-10 md:mt-20 tracking-widest ">
-        Città del Mare-Perla Del Golfo
-      </h1>
+
 
       <div className="container">
+      <h1 className="text-center text-2xl pb-10 pt-20 md:text-7xl md:mb-10 md:mt-40 tracking-widest ">
+        Istituto Salesiano Don Bosco Villa Ranchibile
+        </h1>
         <div className=" grid grid grid-cols-2 pt-10 lg:grid-cols-4 gap-8 lg:pt-40 sm:text-1xl md:text-1xl md:text-3xl  ">
           <ImageViewer>
             <div className="card21">
@@ -241,15 +246,12 @@ const Gallery = () => {
           </ImageViewer>
 
           <ImageViewer>
-            <div className="card29">
+            <div className="card29 mb-20">
               <img src={Bosco9} alt="" />
               <div className="caption">Chiesa</div>
             </div>
           </ImageViewer>
         </div>
-        <h1 className="text-center text-2xl mb-20 mt-10 md:text-7xl md:mb-20 md:mt-20 tracking-widest ">
-        Istituto Salesiano Don Bosco Villa Ranchibile
-        </h1>
       </div>
     </div>
   );
