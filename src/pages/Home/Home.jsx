@@ -137,7 +137,7 @@ const Home = () => {
         </div>
 
         <div
-          className=" heading2 flex absolute md:absolute  md:ml-96
+          className=" heading2 flex absolute md:absolute  
         lg:bottom-1/2 lg:top-2/3
         	md:bottom-1/2 sm:inset-y-2/3 justify-center md:justify-center lg:justify-center
         lg:text-4xl md:text-1xl sm:text-lg font-semibold tracking-wider hidden lg:block lg:mb-20	"
