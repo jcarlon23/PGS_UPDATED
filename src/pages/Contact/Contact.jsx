@@ -53,7 +53,7 @@ const Contact = ({ mailto, label }) => {
         </div>
       </div>
 
-      <div className="flex justify-center text-sm md:text-2xl Contacts mt-10 mr-10 ml-10">
+      <div className="flex justify-center text-sm md:text-2xl Contacts mt-10 md:mr-10 md:ml-10">
         <ul>
           <li>
             <FontAwesomeIcon icon={faPhone} />
