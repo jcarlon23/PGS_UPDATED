@@ -7,7 +7,7 @@
 
 .heading1 {
   left: 20%;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 2%;
 
 }
@@ -38,7 +38,7 @@
   animation-delay: -.4s;
 }
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
@@ -51,4 +51,4 @@
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
   }
-} */
+}
