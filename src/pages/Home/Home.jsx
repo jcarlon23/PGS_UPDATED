@@ -154,8 +154,7 @@ const Home = () => {
 
       <div className=" w-auto min-w-full max-w-none ">
         <h2 className="md:pt-60 md:pb-60 py-10 lg:text-5xl text-2xl text-center ">
-          Coordiniamo le attività sportive da sempre promosse all'interno degli
-          Istituti Salesiani e degli Oratori.
+        Coordiniamo da sempre le attività sportive  promosse all'interno degli Istituti Salesiani e degli Oratori.
         </h2>
         <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 ">
           {activities.map((activity) => (
@@ -174,7 +173,7 @@ const Home = () => {
       </div>
       <div className=" w-auto min-w-full lg:pt-10 bg-gray-700 ">
         <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
-          Presto in arrivo
+        Prossimamente
         </h2>
 
         <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">

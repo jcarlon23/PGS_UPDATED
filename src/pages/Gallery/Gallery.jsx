@@ -58,21 +58,21 @@ const Gallery = () => {
         <ImageViewer>
           <div className="card2">
             <img src={Gallery2} alt="" />
-            <div className="caption">Pronto per sciare</div>
+            <div className="caption">Pronti per sciare</div>
           </div>
         </ImageViewer>
 
         <ImageViewer>
           <div className="card4">
             <img src={Gallery4} alt="" />
-            <div className="caption">Lezione</div>
+            <div className="caption">Lezione di sci</div>
           </div>
         </ImageViewer>
 
         <ImageViewer>
           <div className="card5">
             <img src={Gallery5} alt="" />
-            <div className="caption">@Gambarie</div>
+            <div className="caption">Gambarie D'Aspromonte</div>
           </div>
         </ImageViewer>
 
@@ -136,7 +136,7 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card12">
               <img src={Citta2} alt="" />
-              <div className="caption">Tempo di basket</div>
+              <div className="caption">Basket</div>
             </div>
           </ImageViewer>
 
@@ -157,7 +157,7 @@ const Gallery = () => {
           <ImageViewer>
             <div className="card15">
               <img src={Citta5} alt="" />
-              <div className="caption">Tempo di basket</div>
+              <div className="caption">Basket</div>
             </div>
           </ImageViewer>
 
