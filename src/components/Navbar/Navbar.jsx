@@ -24,7 +24,7 @@ const Navbar = () => {
         </div> */}
 
         <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"} >
-          <li className="nav-item px-2.5 lg:px-3 py-1  text-xs md:text-lg md:font-medium text-black hover:underline underline-offset-8 ">
+          <li className="nav-item px-2.5 lg:px-3 py-1  text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 ">
             <Link to="/" onClick={hideMobileMenu}>
               HOME
             </Link>
