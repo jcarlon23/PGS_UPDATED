@@ -72,7 +72,7 @@ const Gallery = () => {
         <ImageViewer>
           <div className="card5">
             <img src={Gallery5} alt="" />
-            <div className="caption">Gambarie D'Aspromonte</div>
+            <div className="caption">Gambarie</div>
           </div>
         </ImageViewer>
 
