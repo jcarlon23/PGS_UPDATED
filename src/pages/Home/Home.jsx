@@ -149,7 +149,7 @@ const Home = () => {
           <span></span>
           <span></span>
         </div>
-        <video src={front} className="w-auto min-w-full " autoPlay loop muted />
+        <video src={front} className="w-auto min-w-full " autoPlay playsinline loop muted />
       </div>
 
       <div className=" w-auto min-w-full max-w-none ">
