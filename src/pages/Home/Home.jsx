@@ -1,7 +1,10 @@
 import "./Home.css";
-import React, { useEffect } from "react";
+import React, { useEffect, Component } from "react";
+import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
+import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import { Cards, Intro, Video } from "../../components";
 import front from "./PGS_Palermo.mp4";
+
 
 import card2 from "../../assets/cards/PGS2.png";
 import card5 from "../../assets/cards/PGS3.png";
@@ -31,7 +34,6 @@ const activities = [
 
 const events = [
   { img: event1 },
-  { img: event2 },
   { img: event3 },
   { img: event4 },
   { img: event5 },
@@ -117,6 +119,41 @@ const events = [
 //     </React.Fragment>
 //   );
 // });
+
+class Completed extends Component {
+  render() {
+    return <span>The countdown is complete</span>
+  }
+}
+
+class RenderByUsingReactChild extends Component {
+  render() {
+    return (
+      <FlipClockCountdown to={new Date().getTime() + 552 * 3600 * 1000 + 5000}>
+        <Completed />
+      </FlipClockCountdown>
+    )
+  }
+}
+
+class RenderByUsingCallback extends Component {
+  constructor(props) {
+    super(props);
+
+    this.endTime = new Date().getTime() + 552 * 3600 * 1000 + 5000;
+    this.state = {
+      isCompleted: false
+    }
+
+    this.handleComplete = this.handleComplete.bind(this);
+  }
+
+
+
+}
+
+
+
 const Home = () => {
   useEffect(() => {
     const iframeData = document.getElementById("iframeId");
@@ -124,6 +161,8 @@ const Home = () => {
     const lon = 13.3437342;
     iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
   });
+
+
 
   return (
     <div>
@@ -185,8 +224,28 @@ const Home = () => {
         <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
           Prossimamente
         </h2>
+        <div className="Comming Soon flex justify-center pb-2 pt-6">
+          <img
+          src={event2}
+          alt=""
+          className="w-1/3 rounded "/>
+        </div>
+        <div className=" flex justify-center pt-2 pb-20 ">
+        <FlipClockCountdown
+        to={new Date('2023-05-18T22:00:00.635Z').getTime()}
+        labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
+        labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
+        digitBlockStyle={{ width: 40, height: 80, fontSize: 40 }}
+        dividerStyle={{ color: 'white', height: 1 }}
+        separatorStyle={{ color: 'red', size: '6px' }}
+        duration={0.5}
 
-        <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">
+      >
+        Finished
+      </FlipClockCountdown>
+      </div>
+
+        <div className="grid lg:grid-cols-4 gap-8 md:pb-40 lg:ml-8 pb-10 ">
           {events.map((events) => (
             <div className="flex justify-center" key={events.img}>
               <img
