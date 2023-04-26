@@ -20,6 +20,7 @@ import event2 from "../../assets/cards/event2.png";
 import event3 from "../../assets/cards/event3.png";
 import event4 from "../../assets/cards/event4.png";
 import event5 from "../../assets/cards/event5.png";
+import event6 from "../../assets/cards/event7.png";
 
 const activities = [
   { label: "Sci", img: card2 },
@@ -34,6 +35,7 @@ const activities = [
 
 const events = [
   { img: event1 },
+  { img: event6 },
   { img: event3 },
   { img: event4 },
   { img: event5 },
@@ -228,16 +230,16 @@ const Home = () => {
           <img
           src={event2}
           alt=""
-          className="w-1/3 rounded "/>
+          className=" md:w-1/3 rounded "/>
         </div>
-        <div className=" flex justify-center pt-2 pb-20 ">
+        <div className=" flex justify-center pt-2 pb-20  text-9xl ">
         <FlipClockCountdown
-        to={new Date('2023-05-18T22:00:00.635Z').getTime()}
+        to={new Date('2023-05-19T05:00:00.635Z').getTime()}
         labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
-        labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
-        digitBlockStyle={{ width: 40, height: 80, fontSize: 40 }}
-        dividerStyle={{ color: 'white', height: 1 }}
-        separatorStyle={{ color: 'red', size: '6px' }}
+        // labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
+        // digitBlockStyle={{ width: 40, height: 80, fontSize: 40 }}
+        // dividerStyle={{ color: 'white', height: 1 }}
+        // separatorStyle={{ color: 'red', size: '6px' }}
         duration={0.5}
 
       >
@@ -245,7 +247,7 @@ const Home = () => {
       </FlipClockCountdown>
       </div>
 
-        <div className="grid lg:grid-cols-4 gap-8 md:pb-40 lg:ml-8 pb-10 ">
+        <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">
           {events.map((events) => (
             <div className="flex justify-center" key={events.img}>
               <img

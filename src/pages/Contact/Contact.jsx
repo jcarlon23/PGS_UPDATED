@@ -30,7 +30,7 @@ const Contact = ({ mailto, label }) => {
         <h10>Ci piacerebbe sentirti!</h10>
       </div>
 
-      <div className="flex flex-row justify-center gap-11 person1 mb-20">
+      {/* <div className="flex flex-row justify-center gap-11 person1 mb-20">
         <div class="flip-person">
           <div className="flip-person-inner">
             <div className="flip-person-front">
@@ -51,7 +51,7 @@ const Contact = ({ mailto, label }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="flex justify-center text-sm md:text-2xl Contacts mt-10 md:mr-10 md:ml-10">
         <ul>
@@ -62,7 +62,7 @@ const Contact = ({ mailto, label }) => {
           <li>
             <FontAwesomeIcon icon={faEnvelope} />
 
-            <p>president.pgspalermo@gmail.com </p>
+            <p>presidente.pgspalermo@gmail.com</p>
           </li>
           <li>
             <FontAwesomeIcon icon={faLocationDot} />
