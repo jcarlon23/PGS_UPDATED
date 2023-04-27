@@ -24,22 +24,27 @@ const Navbar = () => {
         </div> */}
 
         <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"} >
-          <li className="nav-item px-2.5 lg:px-3 py-1  text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 ">
+          <li className="nav-item px-0.5 lg:px-3 py-1  text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 ">
             <Link to="/" onClick={hideMobileMenu}>
               HOME
             </Link>
           </li>
-          <li className="nav-item px-2.5 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
+          <li className="nav-item px-2.5 lg:px-3 py-1  text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 ">
+            <Link to="Calendar" onClick={hideMobileMenu}>
+            CALENDARIO
+            </Link>
+          </li>
+          <li className="nav-item px-1.0 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
             <Link to="About" onClick={hideMobileMenu}>
               CHI SIAMO
             </Link>
           </li>
-          <li className="nav-item px-2.5 lg:px-3 py-1 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
+          <li className="nav-item px-0.5 lg:px-3 py-1 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8">
             <Link to="Gallery " onClick={hideMobileMenu}>
               GALLERIA
             </Link>
           </li>
-          <li className="nav-item  px-2.5  lg:px-3 py-1 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 md:mr-10">
+          <li className="nav-item  px-0.5  lg:px-3 py-1 text-xs	md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 md:mr-10">
             <Link to="ContactUs" onClick={hideMobileMenu}>
               CONTATTACI
             </Link>
