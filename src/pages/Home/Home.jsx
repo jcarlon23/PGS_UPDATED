@@ -226,21 +226,23 @@ const Home = () => {
         <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
           Prossimamente
         </h2>
-        <div className="Comming Soon flex justify-center pb-2 pt-6">
+        <div className="Comming Soon flex md:shrink justify-center pb-2 pt-6">
           <img
           src={event2}
           alt=""
           className=" md:w-1/3 rounded "/>
         </div>
-        <div className=" flex justify-center pt-2 pb-20  text-9xl ">
+        <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
         <FlipClockCountdown
         to={new Date('2023-05-19T05:00:00.635Z').getTime()}
-        labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
-        // labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
-        // digitBlockStyle={{ width: 40, height: 80, fontSize: 40 }}
-        // dividerStyle={{ color: 'white', height: 1 }}
-        // separatorStyle={{ color: 'red', size: '6px' }}
+        labels={['GIORNI', 'ORE', 'MINUTI', 'SECONDI']}
+          labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
+         digitBlockStyle={{ width: 29, height: 70, fontSize: 40 }}
+        dividerStyle={{ color: 'white', height: 1 }}
+        className="  "
+
         duration={0.5}
+
 
       >
         Finished
