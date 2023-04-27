@@ -1,10 +1,9 @@
 import "./Home.css";
-import React, { useEffect, Component } from "react";
-import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
-import '@leenguyen/react-flip-clock-countdown/dist/index.css';
+import React, { useEffect, Component, useRef } from "react";
+import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
+import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import { Cards, Intro, Video } from "../../components";
 import front from "./PGS_Palermo.mp4";
-
 
 import card2 from "../../assets/cards/PGS2.png";
 import card5 from "../../assets/cards/PGS3.png";
@@ -124,7 +123,7 @@ const events = [
 
 class Completed extends Component {
   render() {
-    return <span>The countdown is complete</span>
+    return <span>The countdown is complete</span>;
   }
 }
 
@@ -134,7 +133,7 @@ class RenderByUsingReactChild extends Component {
       <FlipClockCountdown to={new Date().getTime() + 552 * 3600 * 1000 + 5000}>
         <Completed />
       </FlipClockCountdown>
-    )
+    );
   }
 }
 
@@ -144,17 +143,12 @@ class RenderByUsingCallback extends Component {
 
     this.endTime = new Date().getTime() + 552 * 3600 * 1000 + 5000;
     this.state = {
-      isCompleted: false
-    }
+      isCompleted: false,
+    };
 
     this.handleComplete = this.handleComplete.bind(this);
   }
-
-
-
 }
-
-
 
 const Home = () => {
   useEffect(() => {
@@ -163,8 +157,6 @@ const Home = () => {
     const lon = 13.3437342;
     iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
   });
-
-
 
   return (
     <div>
@@ -191,14 +183,18 @@ const Home = () => {
           <span></span>
           <span></span>
         </div>
-        <video
-          src={front}
-          type="video/mp4"
+        <div
+          dangerouslySetInnerHTML={{
+          __html: `<video
           className="w-auto min-w-full "
-          playsinline={true}
-          autoPlay={true}
-          loop={true}
-          muted={true}
+          playsinline
+          autoPlay
+          loop
+          muted>
+          <source src=${front} type="video/mp4" />
+          Your browser does not support the video tag.
+    </video>`,
+          }}
         />
       </div>
 
@@ -227,27 +223,25 @@ const Home = () => {
           Prossimamente
         </h2>
         <div className="Comming Soon flex md:shrink justify-center pb-2 pt-6">
-          <img
-          src={event2}
-          alt=""
-          className=" md:w-1/3 rounded "/>
+          <img src={event2} alt="" className=" md:w-1/3 rounded " />
         </div>
         <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
-        <FlipClockCountdown
-        to={new Date('2023-05-19T05:00:00.635Z').getTime()}
-        labels={['GIORNI', 'ORE', 'MINUTI', 'SECONDI']}
-          labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
-         digitBlockStyle={{ width: 29, height: 70, fontSize: 40 }}
-        dividerStyle={{ color: 'white', height: 1 }}
-        className="  "
-
-        duration={0.5}
-
-
-      >
-        Finished
-      </FlipClockCountdown>
-      </div>
+          <FlipClockCountdown
+            to={new Date("2023-05-19T05:00:00.635Z").getTime()}
+            labels={["GIORNI", "ORE", "MINUTI", "SECONDI"]}
+            labelStyle={{
+              fontSize: 10,
+              fontWeight: 500,
+              textTransform: "uppercase",
+            }}
+            digitBlockStyle={{ width: 29, height: 70, fontSize: 40 }}
+            dividerStyle={{ color: "white", height: 1 }}
+            className="  "
+            duration={0.5}
+          >
+            Finished
+          </FlipClockCountdown>
+        </div>
 
         <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">
           {events.map((events) => (
