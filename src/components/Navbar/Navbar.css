@@ -29,7 +29,9 @@
     #619b8a 100%
   );
 }
-
+.menuhidden {
+  display: none;
+}
 /* .header .navbar {
   display: flex;
 
@@ -58,9 +60,9 @@
   /* margin-left: 2px; */
 /* }  */
 
- .header .nav-menu {
+ /* .header .nav-menu {
   display: flex;
-}
+} */
 
 /* .header .nav-item {
   padding: 1rem;
@@ -70,7 +72,7 @@
 
 /* .hamburger {
   display: none;
-} */
+}  */
 
 /* @media screen and (max-width: 940px) {
   .header {

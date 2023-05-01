@@ -15,15 +15,25 @@ const Navbar = () => {
         <Link to="/" className="logo mb-2 md:ml-10 ">
           <img src={logo} alt="PGS Palermo logo" />
         </Link>
-        {/* <div className="hamburger" onClick={showMobileMenu}>
-          {showMenuForMobile ? (
-            <FaTimes size={30} style={{ color: "#ffffff" }} />
-          ) : (
-            <FaBars size={30} style={{ color: "#ffffff" }} />
-          )}
-        </div> */}
 
-        <ul className={showMenuForMobile ? "nav-menu active" : "nav-menu"} >
+        <div
+          className="hamburger sm:visible md:invisible "
+          onClick={showMobileMenu}
+        >
+          {showMenuForMobile ? (
+            <FaTimes size={30} style={{ color: "#333" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#333" }} />
+          )}
+        </div>
+
+        <ul
+          className={
+            showMenuForMobile
+              ? "nav-menu active md:flex md:flex-row "
+              : "menuhidden md:visible md:flex md:flex-row"
+          }
+        >
           <li className="nav-item px-0.5 lg:px-3 py-1  text-xs md:text-m lg:text-lg font-medium text-black hover:underline underline-offset-8 ">
             <Link to="/" onClick={hideMobileMenu}>
               HOME

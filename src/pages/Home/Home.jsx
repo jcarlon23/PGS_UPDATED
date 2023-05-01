@@ -3,7 +3,7 @@ import React, { useEffect, Component, useRef } from "react";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import { Cards, Intro, Video } from "../../components";
-import WebViewer from '@pdftron/webviewer';
+import WebViewer from "@pdftron/webviewer";
 import front from "./PGS_Palermo.mp4";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,6 @@ const events = [
   { img: event3 },
   { img: event4 },
   { img: event5 },
-
 ];
 
 // const cards = [
@@ -125,7 +124,6 @@ const events = [
 //   );
 // });
 
-
 class Completed extends Component {
   render() {
     return <span>The countdown is complete</span>;
@@ -155,17 +153,13 @@ class RenderByUsingCallback extends Component {
   }
 }
 
-
 const Home = () => {
-
-
   useEffect(() => {
     const iframeData = document.getElementById("iframeId");
     const lat = 38.1434359;
     const lon = 13.3437342;
     iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
   });
-
 
   return (
     <div>
@@ -262,15 +256,14 @@ const Home = () => {
               />
             </div>
           ))}
-           <div className=" flex md:shrink justify-center pb-2 pt-6">
-           <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdlRzf-Gf62sugycyFdCLLNn69mj6E_E8r4EcDsJWlrcTOkfA/viewform">
-          <img src={event7} alt="" className=" rounded  md:h-96	  " />
-          </Link>
-        </div>
+          <div className=" flex md:shrink justify-center pb-2 pt-6">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdlRzf-Gf62sugycyFdCLLNn69mj6E_E8r4EcDsJWlrcTOkfA/viewform">
+              <img src={event7} alt="" className=" rounded  md:h-96	  " />
+            </Link>
+          </div>
         </div>
 
         {/* <Feed /> */}
-
       </div>
       <div className=" w-auto min-w-full max-w-none  ">
         <h2 className="pt-10 pb-5 md:text-4xl text-center text-white ">
