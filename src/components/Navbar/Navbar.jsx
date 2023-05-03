@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className="hamburger  sm:visible md:invisible  "
+          className="hamburger sm:visible md:invisible  "
           onClick={showMobileMenu}
         >
           {showMenuForMobile ? (
@@ -30,11 +30,11 @@ const Navbar = () => {
         <ul
           className={
             showMenuForMobile
-              ? "nav-menu active flex flex-col md:flex md:flex-row "
-              : "menuhidden md:visible md:flex md:flex-row "
+              ? "nav-menu active flex flex-col md:flex md:flex-row  "
+              : "menuhidden md:visible md:flex md:flex-row  "
           }
         >
-          <li className="nav-item  hover-textShadow px-0.5 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium md:text-black hover:underline underline-offset-8 ">
+          <li className="nav-item  px-0.5 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium md:text-black hover:underline underline-offset-8 ">
             <Link to="/" onClick={hideMobileMenu}>
               HOME
             </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             CALENDARIO
             </Link>
           </li> */}
-          <li className="nav-item px-1.0 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium md:text-black hover:underline underline-offset-8">
+          <li className="nav-item  px-1.0 lg:px-3 py-1 text-xs md:text-m lg:text-lg font-medium md:text-black hover:underline underline-offset-8">
             <Link to="About" onClick={hideMobileMenu}>
               CHI SIAMO
             </Link>
