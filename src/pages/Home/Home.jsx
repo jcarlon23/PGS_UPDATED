@@ -126,7 +126,7 @@ const events = [
 
 class Completed extends Component {
   render() {
-    return <span>The countdown is complete</span>;
+    return <span>L'evento è in diretta!!!🎉🎉🎉</span>;
   }
 }
 
@@ -242,7 +242,7 @@ const Home = () => {
             className="  "
             duration={0.5}
           >
-            Finished
+            L’evento è in corso!!!🎉🎉🎉
           </FlipClockCountdown>
         </div>
 
