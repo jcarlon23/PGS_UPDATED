@@ -252,7 +252,7 @@ const Home = () => {
               <img
                 src={events.img}
                 alt="card2"
-                className=" h-full w-80 rounded "
+                className=" h-full w-80 rounded hover:scale-125 transition-all duration-500 cursor-pointer "
               />
             </div>
           ))}
