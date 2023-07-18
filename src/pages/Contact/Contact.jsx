@@ -24,7 +24,7 @@ const Contact = ({ mailto, label }) => {
       <img
         src={background}
         alt=""
-        className=" background w-full lg:h-[600px] object-cover md:h-[96px] "
+        className=" background w-full lg:h-[600px] object-cover md:h-[350px] sm:h-[96px]"
       />
       <div className="text-center text-4xl md:text-7xl mb-10 mt-20">
         <h9>Contattaci</h9>
