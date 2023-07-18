@@ -6,6 +6,7 @@ import {
   faFacebook,
   faInstagram,
   faYoutube,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -28,6 +29,11 @@ const Footer = () => {
         <div className="instagram mt-2 text-xs md:text-2xl md:mt-4 ">
           <Link to="https://www.instagram.com/pgspalermo/">
             <FontAwesomeIcon icon={faInstagram} />
+          </Link>
+        </div>
+        <div className="tiktok mt-2 text-xs md:text-2xl md:mt-4 ">
+          <Link to="https://www.tiktok.com/@pgspalermo">
+            <FontAwesomeIcon icon={faTiktok} />
           </Link>
         </div>
         <div className="youtube text-xs mt-2 md:text-2xl md:mt-4  ">
