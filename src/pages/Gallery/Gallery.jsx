@@ -15,6 +15,14 @@ import Gallery7 from "./Gallery7.png";
 import Gallery8 from "./Gallery8.png";
 import Gallery9 from "./Gallery9.png";
 import Gallery10 from "./Gallery10.png";
+import Gallery12 from "./Gallery12.png";
+import Gallery14 from "./Gallery14.png";
+import Gallery15 from "./Gallery15.png";
+import Gallery16 from "./Gallery16.png";
+import Gallery17 from "./Gallery17.png";
+import Gallery18 from "./Gallery18.png";
+import Gallery19 from "./Gallery19.png";
+import Gallery20 from "./Gallery20.png";
 
 import Citta1 from "./Citta1.png";
 import Citta2 from "./Citta2.png";
@@ -44,6 +52,67 @@ const Gallery = () => {
       <h1 className="text-center text-2xl md:text-7xl md:mb-4 md:mt-20 mt-10 tracking-widest">
         GALLERIA
       </h1>
+      <h1 className="text-center text-2xl mt-10 md:text-7xl  md:mb-10 md:mt-40 tracking-widest ">
+      Coppa Palermo 2023
+      </h1>
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-8 lg:pt-40 pt-10 lg:grid-cols-4 lg:gap-4 md:text-3xl  ">
+        <ImageViewer>
+          <div className="card1 ">
+            <img src={Gallery12} alt="" />
+            <div className="caption"></div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card2">
+            <img src={Gallery14} alt="" />
+            <div className="caption">Pallavolo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card4">
+            <img src={Gallery15} alt="" />
+            <div className="caption">Tutti sono qui</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card5">
+            <img src={Gallery16} alt="" />
+            <div className="caption">Foto di gruppo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card6">
+            <img src={Gallery17} alt="" />
+            <div className="caption">Pallavolo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card7">
+            <img src={Gallery18} alt="" />
+            <div className="caption">Foto di gruppo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card9">
+            <img src={Gallery19} alt="" />
+            <div className="caption">Pallavolo</div>
+          </div>
+        </ImageViewer>
+
+        <ImageViewer>
+          <div className="card10">
+            <img src={Gallery20} alt="" />
+            <div className="caption">Foto di gruppo</div>
+          </div>
+        </ImageViewer>
+      </div>
+
       <h1 className="text-center text-2xl mt-10 md:text-7xl  md:mb-10 md:mt-40 tracking-widest ">
       Gambarie D'Aspromonte
       </h1>

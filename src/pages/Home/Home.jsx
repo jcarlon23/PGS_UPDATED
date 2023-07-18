@@ -37,7 +37,7 @@ const activities = [
 
 const events = [
   { img: event1 },
-  { img: event6 },
+  { img: event2 },
   { img: event3 },
   { img: event4 },
   { img: event5 },
@@ -226,7 +226,7 @@ const Home = () => {
           Prossimamente
         </h2>
         <div className="Comming Soon flex md:shrink justify-center pb-2 pt-6">
-          <img src={event2} alt="" className=" md:w-1/3 rounded " />
+          <img src={event6} alt="" className=" md:w-1/3 rounded " />
         </div>
         <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
           <FlipClockCountdown
@@ -242,7 +242,7 @@ const Home = () => {
             className="  "
             duration={0.5}
           >
-            L’evento è in corso!!!🎉🎉🎉
+            {/* L’evento è in corso!!!🎉🎉🎉 */}
           </FlipClockCountdown>
         </div>
 
