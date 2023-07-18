@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "@react-email/link";
 import "./Contact.css";
-import Pro1 from "./Pro1.png";
-import Back1 from "./Back1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import background from "./background.png";
 import {
   faPhone,
   faEnvelope,
@@ -22,6 +21,11 @@ const Contact = ({ mailto, label }) => {
 
   return (
     <div>
+      <img
+        src={background}
+        alt=""
+        className=" background w-full lg:h-[600px] object-cover md:h-[96px] "
+      />
       <div className="text-center text-4xl md:text-7xl mb-10 mt-20">
         <h9>Contattaci</h9>
       </div>
