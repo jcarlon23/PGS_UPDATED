@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <footer className="footer singleCol social-media-icons-white d-flex justify-content-evenly  ">
 
-<div className="copy text-xs mt-2  md:mt-4 md:text-base  no-underline  ">
+{/* <div className="copy text-xs mt-2  md:mt-4 md:text-base  no-underline  ">
         <Link to="https://jameswebpages.com/">
             <p>&copy; Copywright by James's web pages</p>
           </Link>
-          </div>
+          </div> */}
 
         <h4 className="_14 text-xs mt-2 md:mt-4 md:text-2xl hidden lg:block ">Seguici su: </h4>
         <div className="facebook text-xs mt-2 md:mt-4 md:text-2xl  ">

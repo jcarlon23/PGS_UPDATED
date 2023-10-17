@@ -230,7 +230,7 @@ const Home = () => {
         </div>
         <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
           <FlipClockCountdown
-            to={new Date("2023-05-19T05:00:00.635Z").getTime()}
+            to={new Date("2023-11-29T05:00:00.635Z").getTime()}
             labels={["GIORNI", "ORE", "MINUTI", "SECONDI"]}
             labelStyle={{
               fontSize: 10,
@@ -242,7 +242,6 @@ const Home = () => {
             className="  "
             duration={0.5}
           >
-            {/* L’evento è in corso!!!🎉🎉🎉 */}
           </FlipClockCountdown>
         </div>
 
