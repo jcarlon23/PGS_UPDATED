@@ -6,6 +6,10 @@ import { Cards, Intro, Video } from "../../components";
 import WebViewer from "@pdftron/webviewer";
 import front from "./PGS_Palermo.mp4";
 import { Link } from "react-router-dom";
+import Snowfall from 'react-snowfall'
+
+
+
 
 import card2 from "../../assets/cards/PGS2.png";
 import card5 from "../../assets/cards/PGS3.png";
@@ -221,7 +225,12 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className=" w-auto min-w-full lg:pt-10 bg-gray-700 ">
+
+      <div className=" w-auto min-w-full lg:pt-1">
+      <div style={{ background: '#282c34', position: 'relative' }}>
+    <Snowfall />
+
+
         <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
           Prossimamente
         </h2>
@@ -230,7 +239,7 @@ const Home = () => {
         </div>
         <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
           <FlipClockCountdown
-            to={new Date("2023-11-29T05:00:00.635Z").getTime()}
+            to={new Date("2023-10-29T05:00:00.635Z").getTime()}
             labels={["GIORNI", "ORE", "MINUTI", "SECONDI"]}
             labelStyle={{
               fontSize: 10,
@@ -253,6 +262,7 @@ const Home = () => {
                 alt="card2"
                 className=" h-full w-80 rounded hover:scale-125 transition-all duration-500 cursor-pointer "
               />
+
             </div>
           ))}
           <div className=" flex md:shrink justify-center pb-2 pt-6">
@@ -264,6 +274,7 @@ const Home = () => {
 
         {/* <Feed /> */}
       </div>
+      </div>
       <div className=" w-auto min-w-full max-w-none  ">
         <h2 className="pt-10 pb-5 md:text-4xl text-center text-white ">
           Sede centrale: Viale Libertà, 199 - (90100) Palermo
@@ -272,7 +283,9 @@ const Home = () => {
           </div>
         </h2>
       </div>
+
     </div>
+
   );
 };
 
