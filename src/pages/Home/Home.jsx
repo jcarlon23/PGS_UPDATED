@@ -6,11 +6,10 @@ import { Cards, Intro, Video } from "../../components";
 import WebViewer from "@pdftron/webviewer";
 import front from "./PGS_Palermo.mp4";
 import { Link } from "react-router-dom";
-import Snowfall from 'react-snowfall'
+import image from "/Users/jamescarlon/code/my-react-app/src/pages/Home/Image1.jpg";
 
 
-
-
+import card1 from "../../assets/cards/About.png";
 import card2 from "../../assets/cards/PGS2.png";
 import card5 from "../../assets/cards/PGS3.png";
 import card9 from "../../assets/cards/PGS4.png";
@@ -19,6 +18,9 @@ import card7 from "../../assets/cards/PGS6.png";
 import card8 from "../../assets/cards/PGS7.png";
 import card6 from "../../assets/cards/PGS8.png";
 import card4 from "../../assets/cards/PGS9.png";
+
+
+import card10 from "../../assets/cards/PGS10.png";
 
 import event1 from "../../assets/cards/event6.png";
 import event2 from "../../assets/cards/event2.png";
@@ -206,11 +208,23 @@ const Home = () => {
       </div>
 
       <div className=" w-auto min-w-full max-w-none ">
-        <h2 className="md:pt-60 md:pb-60 py-10 lg:text-5xl text-2xl text-center ">
+        <h2 className="md:pt-60 md:pb-40 py-10 lg:text-5xl text-2xl text-center ">
           Coordiniamo da sempre le attività sportive promosse all'interno degli
           Istituti Salesiani e degli Oratori.
         </h2>
-        <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 ">
+
+        <Link to="https://sites.google.com/educandatomariadelaide.it/pgs-2024/home">
+          <div className=" Comming Soon md:shrink justify-center pb-2 pt-6 flex flex-wrap text-xl">
+            <img
+              src={card10}
+              alt=""
+              className=" rounded-full w-80 flex flex-wrap text-xl"
+            />
+          </div>
+          <div className=" text-center text-xl "> PGS Natura</div>
+        </Link>
+
+        <div className="grid lg:grid-cols-8 grid-cols-2 md:grid-cols-4 gap-4 lg:pb-80 pb-20 pt-8 ">
           {activities.map((activity) => (
             <div className="flex justify-center flex-col" key={activity.img}>
               <img
@@ -218,6 +232,7 @@ const Home = () => {
                 alt="card2"
                 className="rounded-full  md:w-full w-40 "
               />
+
               <div className="text-center pr-4 md:text-xl mt-2">
                 {activity.label}
               </div>
@@ -226,66 +241,63 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" w-auto min-w-full lg:pt-1">
-      <div style={{ background: '#282c34', position: 'relative' }}>
-    <Snowfall />
-
-
-        <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
-          Prossimamente
-        </h2>
-        <div className="Comming Soon flex md:shrink justify-center pb-2 pt-6">
-          <img src={event6} alt="" className=" md:w-1/3 rounded " />
-        </div>
-        <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
-          <FlipClockCountdown
-            to={new Date("2023-10-29T05:00:00.635Z").getTime()}
-            labels={["GIORNI", "ORE", "MINUTI", "SECONDI"]}
-            labelStyle={{
-              fontSize: 10,
-              fontWeight: 500,
-              textTransform: "uppercase",
-            }}
-            digitBlockStyle={{ width: 29, height: 70, fontSize: 40 }}
-            dividerStyle={{ color: "white", height: 1 }}
-            className="  "
-            duration={0.5}
-          >
-          </FlipClockCountdown>
-        </div>
-
-        <div className="grid lg:grid-cols-5 gap-8 md:pb-40 lg:ml-8 pb-10 ">
-          {events.map((events) => (
-            <div className="flex justify-center" key={events.img}>
-              <img
-                src={events.img}
-                alt="card2"
-                className=" h-full w-80 rounded hover:scale-125 transition-all duration-500 cursor-pointer "
-              />
-
+      <div className=" w-auto min-w-full lg:pt-1 sm:bg-contain	bg-cover">
+        <div style={{ backgroundImage:`url(${image})` , position: "relative" , backgroundRepeat:"no-repeat", backgroundSize:"contain" }}>
+          <h2 className="pt-10 lg:pl-10 pb-10 text-3xl text-white font-semibold text-center ">
+            Prossimamente
+          </h2>
+          <Link to="https://sites.google.com/educandatomariadelaide.it/pgs-2024/home">
+            <div className="Comming Soon flex md:shrink justify-center pb-2 pt-6">
+              <img src={event6} alt="" className=" md:w-1/3 rounded " />
             </div>
-          ))}
-          <div className=" flex md:shrink justify-center pb-2 pt-6">
-            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdlRzf-Gf62sugycyFdCLLNn69mj6E_E8r4EcDsJWlrcTOkfA/viewform">
-              <img src={event7} alt="" className=" rounded  md:h-96	  " />
-            </Link>
-          </div>
-        </div>
+          </Link>
 
-        {/* <Feed /> */}
+          <div className=" flex justify-center pt-2 pb-20 aspect-auto ">
+            <FlipClockCountdown
+              to={new Date("2024-05-17T05:00:00.635Z").getTime()}
+              labels={["GIORNI", "ORE", "MINUTI", "SECONDI"]}
+              labelStyle={{
+                fontSize: 10,
+                fontWeight: 500,
+                textTransform: "uppercase",
+              }}
+              digitBlockStyle={{ width: 29, height: 70, fontSize: 40 }}
+              dividerStyle={{ color: "white", height: 1 }}
+              className="  "
+              duration={0.5}
+            ></FlipClockCountdown>
+          </div>
+
+          <div className="grid lg:grid-cols-5 gap-8  lg:ml-8 pt-20">
+            {events.map((events) => (
+              <div className="flex justify-center" key={events.img}>
+                <img
+                  src={events.img}
+                  alt="card2"
+                  className=" h-full w-80 rounded hover:scale-125 transition-all duration-500 cursor-pointer "
+                />
+              </div>
+            ))}
+            <div className=" flex md:shrink justify-center pb-2 pt-6"></div>
+          </div>
+
+          {/* <Feed /> */}
+
       </div>
-      </div>
+
       <div className=" w-auto min-w-full max-w-none  ">
-        <h2 className="pt-10 pb-5 md:text-4xl text-center text-white ">
+
+        <h2 className=" md:text-4xl text-center text-white ">
           Sede centrale: Viale Libertà, 199 - (90100) Palermo
-          <div className="pt-10">
+          <div className="pt-5">
             <iframe id="iframeId" height="600px" width="100%"></iframe>
           </div>
+
         </h2>
+
       </div>
-
+      </div>
     </div>
-
   );
 };
 
